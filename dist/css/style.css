@@ -1276,15 +1276,15 @@ body.lock {
   .page-load__progress-bg {
     -webkit-transform: translate(-50%, calc(-50% - 3px)) rotate(180deg);
         -ms-transform: translate(-50%, calc(-50% - 3px)) rotate(180deg);
-            transform: translate(-50%, calc(-50% - 3px)) rotate(180deg);
-    height: 95%; } }
+            transform: translate(-50%, calc(-50% - 3px)) rotate(180deg); } }
 
 @media (max-width: 375px) {
   .page-load__progress-bg {
-    -webkit-transform: translate(-50%, calc(-50% - 2px)) rotate(180deg);
-        -ms-transform: translate(-50%, calc(-50% - 2px)) rotate(180deg);
-            transform: translate(-50%, calc(-50% - 2px)) rotate(180deg);
-    height: 94%; } }
+    height: 95%; } }
+
+@media (max-width: 345px) {
+  .page-load__progress-bg {
+    height: 94.5%; } }
 
 .footer__wrap {
   padding: 40px 0; }
