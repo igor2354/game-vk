@@ -8,6 +8,14 @@ document.addEventListener(
 			window.addEventListener("resize", function () {
 				wrapCenterBg.style.height = wrapCenterBg.clientWidth + 40 + "px";
 			});
+
+			window.addEventListener(
+				"orientationchange",
+				function () {
+					wrapCenterBg.style.height = wrapCenterBg.clientWidth + 40 + "px";
+				},
+				false
+			);
 		}
 	},
 	false
