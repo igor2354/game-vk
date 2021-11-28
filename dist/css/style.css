@@ -1611,8 +1611,8 @@ body.lock {
 @media (max-width: 500px) {
   .welcome-popup__wrap::before {
     right: -8rem;
-    width: 220px;
-    height: 350px; }
+    width: 235px;
+    height: 375px; }
   .welcome-popup__group-slider {
     max-width: 260px;
     padding: 0 20px; }
@@ -1626,7 +1626,10 @@ body.lock {
   .welcome-popup__group-slider {
     max-width: 220px; }
   .slider-welcome__slide {
-    padding: 30px 15px; } }
+    padding: 30px 15px; }
+  .welcome-popup__wrap::before {
+    width: 220px;
+    height: 350px; } }
 
 .footer__wrap {
   padding: 40px 0; }
