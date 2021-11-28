@@ -1368,23 +1368,23 @@ body.lock {
   cursor: pointer;
   width: 39px;
   height: 39px;
-  background: url("../img/welcome-screen/icon-close.png") no-repeat center/contain; }
+  background: url("../img/welcome-screen/icon-close.png") no-repeat center/contain, url("../img/welcome-screen/icon-close-hover.png") no-repeat center/contain, url("../img/welcome-screen/icon-close-active.png") no-repeat center/contain; }
   .close-icon:hover {
-    background: url("../img/welcome-screen/icon-close-hover.png") no-repeat center/contain; }
+    background: url("../img/welcome-screen/icon-close-hover.png") no-repeat center/contain, url("../img/welcome-screen/icon-close.png") no-repeat center/contain, url("../img/welcome-screen/icon-close-active.png") no-repeat center/contain; }
   .close-icon:active {
-    background: url("../img/welcome-screen/icon-close-active.png") no-repeat center/contain; }
+    background: url("../img/welcome-screen/icon-close-active.png") no-repeat center/contain, url("../img/welcome-screen/icon-close.png") no-repeat center/contain, url("../img/welcome-screen/icon-close-hover.png") no-repeat center/contain; }
 
 .icon-prev {
   cursor: pointer;
   width: 25px;
   height: 40px;
-  background: url("../img/welcome-screen/icon-prev.png") no-repeat center/contain;
+  background: url("../img/welcome-screen/icon-prev.png") no-repeat center/contain, url("../img/welcome-screen/icon-prev-hover.png") no-repeat center/contain, url("../img/welcome-screen/icon-prev-active.png") no-repeat center/contain;
   -webkit-filter: drop-shadow(-10px 12px 10px rgba(0, 0, 0, 0.5));
           filter: drop-shadow(-10px 12px 10px rgba(0, 0, 0, 0.5)); }
   .icon-prev:hover {
-    background: url("../img/welcome-screen/icon-prev-hover.png") no-repeat center/contain; }
+    background: url("../img/welcome-screen/icon-prev-hover.png") no-repeat center/contain, url("../img/welcome-screen/icon-prev.png") no-repeat center/contain, url("../img/welcome-screen/icon-prev-active.png") no-repeat center/contain; }
   .icon-prev:active {
-    background: url("../img/welcome-screen/icon-prev-active.png") no-repeat center/contain; }
+    background: url("../img/welcome-screen/icon-prev-active.png") no-repeat center/contain, url("../img/welcome-screen/icon-prev.png") no-repeat center/contain, url("../img/welcome-screen/icon-prev-hover.png") no-repeat center/contain; }
 
 .icon-next {
   cursor: pointer;
