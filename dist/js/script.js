@@ -1,6 +1,16 @@
 document.addEventListener(
 	"DOMContentLoaded",
 	function () {
+		let sliderWelcome = new Swiper(".slider-welcome", {
+			slidesPerView: 1,
+			watchOverflow: true,
+			spaceBetween: 20,
+			navigation: {
+				nextEl: ".slider-welcome__next",
+				prevEl: ".slider-welcome__prev",
+			},
+		});
+
 		let wrapCenterBg = document.querySelector(".page-load__group");
 
 		if (wrapCenterBg != null) {
