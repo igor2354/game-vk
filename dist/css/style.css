@@ -114,11 +114,8 @@ body.lock {
 
 .container {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   max-width: 1000px;
-  max-height: 820px;
+  min-height: 820px;
   width: 100%;
   overflow: hidden; }
 
@@ -1630,6 +1627,849 @@ body.lock {
   .welcome-popup__wrap::before {
     width: 220px;
     height: 350px; } }
+
+.page-anceta {
+  background: url("../img/page-anceta/image-wood-bg.png") no-repeat center/cover; }
+
+.main {
+  height: 100%; }
+  .main__wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%; }
+    .main__wrap::before {
+      content: "";
+      position: absolute;
+      top: 48px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-width: 10px;
+      border-style: solid;
+      border-image-source: url("../img/page-anceta/main-bg-border.png");
+      border-image-slice: 10; }
+  .main__content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main__content-wrap {
+    width: 100%; }
+
+.main-menu {
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-menu__left-menu {
+    max-width: 301px; }
+  .main-menu__middle-menu {
+    max-width: 345px; }
+
+.menu-left {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 3; }
+  .menu-left::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 301px;
+    height: 52px;
+    background: url("../img/page-anceta/image-plank.png") no-repeat center/contain; }
+  .menu-left__avatar {
+    margin-right: 16px;
+    position: relative;
+    z-index: 3; }
+  .menu-left__avatar-image {
+    position: relative;
+    width: 50px;
+    height: 50px; }
+    .menu-left__avatar-image img {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      border-radius: 50%;
+      z-index: 2; }
+    .menu-left__avatar-image::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(calc(-50% + 5px), calc(-50% + 5px));
+          -ms-transform: translate(calc(-50% + 5px), calc(-50% + 5px));
+              transform: translate(calc(-50% + 5px), calc(-50% + 5px));
+      width: 72px;
+      height: 71px;
+      background: url("../img/page-anceta/image-bg-avatar-back-nodeco.png") no-repeat; }
+    .menu-left__avatar-image::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 48px;
+      height: 48px;
+      background: url("../img/page-anceta/image-bg-front.png") no-repeat;
+      z-index: 3; }
+  .menu-left__avatar-decor {
+    position: absolute;
+    bottom: -7px;
+    left: 31px;
+    width: 19px;
+    height: 18px;
+    background: url("../img/page-anceta/decor-small.png") no-repeat;
+    z-index: 3; }
+  .menu-left__group {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 160px;
+        flex-basis: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .menu-left__group-energy {
+    margin-top: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .menu-left__energy {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 90px;
+        flex-basis: 90px;
+    margin-right: 10px; }
+    .menu-left__energy::before {
+      background: url("../img/page-anceta/image-bg-energy.png") no-repeat center/contain; }
+    .menu-left__energy .load-block__progress {
+      background: -webkit-gradient(linear, left top, right top, from(#3c640e), color-stop(4%, #295d08), color-stop(9%, #226307), color-stop(13%, #296609), color-stop(17%, #2a6507), color-stop(22%, #2d6907), color-stop(26%, #2b6c06), color-stop(30%, #306e09), color-stop(35%, #2f7208), color-stop(39%, #337509), color-stop(52%, #377707), color-stop(65%, #417e09), color-stop(70%, #407f0a), color-stop(78%, #457f07), color-stop(83%, #477d0b), color-stop(87%, #467b07), color-stop(91%, #44780a), to(#496d0b));
+      background: -o-linear-gradient(left, #3c640e 0%, #295d08 4%, #226307 9%, #296609 13%, #2a6507 17%, #2d6907 22%, #2b6c06 26%, #306e09 30%, #2f7208 35%, #337509 39%, #377707 52%, #417e09 65%, #407f0a 70%, #457f07 78%, #477d0b 83%, #467b07 87%, #44780a 91%, #496d0b 100%);
+      background: linear-gradient(to right, #3c640e 0%, #295d08 4%, #226307 9%, #296609 13%, #2a6507 17%, #2d6907 22%, #2b6c06 26%, #306e09 30%, #2f7208 35%, #337509 39%, #377707 52%, #417e09 65%, #407f0a 70%, #457f07 78%, #477d0b 83%, #467b07 87%, #44780a 91%, #496d0b 100%); }
+      .menu-left__energy .load-block__progress::before {
+        background: #56ce10; }
+    .menu-left__energy .load-block__value {
+      padding-left: 11px; }
+      .menu-left__energy .load-block__value span {
+        position: relative; }
+        .menu-left__energy .load-block__value span::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -12px;
+          -webkit-transform: translate(0, -50%);
+              -ms-transform: translate(0, -50%);
+                  transform: translate(0, -50%);
+          width: 10px;
+          height: 17px;
+          background: url("../img/page-anceta/image-energy-ico.png") no-repeat; }
+  .menu-left__time {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-preferred-size: 60px;
+        flex-basis: 60px; }
+    .menu-left__time::before {
+      background: url("../img/page-anceta/image-bg-time.png") no-repeat center/contain; }
+    .menu-left__time .load-block__progress {
+      width: 100%;
+      background: -webkit-gradient(linear, left top, right top, from(#3c640e), color-stop(4%, #295d08), color-stop(9%, #226307), color-stop(13%, #296609), color-stop(17%, #2a6507), color-stop(22%, #2d6907), color-stop(26%, #2b6c06), color-stop(30%, #306e09), color-stop(35%, #2f7208), color-stop(39%, #337509), color-stop(52%, #377707), color-stop(65%, #417e09), color-stop(70%, #407f0a), color-stop(78%, #457f07), color-stop(83%, #477d0b), color-stop(87%, #467b07), color-stop(91%, #44780a), to(#496d0b));
+      background: -o-linear-gradient(left, #3c640e 0%, #295d08 4%, #226307 9%, #296609 13%, #2a6507 17%, #2d6907 22%, #2b6c06 26%, #306e09 30%, #2f7208 35%, #337509 39%, #377707 52%, #417e09 65%, #407f0a 70%, #457f07 78%, #477d0b 83%, #467b07 87%, #44780a 91%, #496d0b 100%);
+      background: linear-gradient(to right, #3c640e 0%, #295d08 4%, #226307 9%, #296609 13%, #2a6507 17%, #2d6907 22%, #2b6c06 26%, #306e09 30%, #2f7208 35%, #337509 39%, #377707 52%, #417e09 65%, #407f0a 70%, #457f07 78%, #477d0b 83%, #467b07 87%, #44780a 91%, #496d0b 100%); }
+      .menu-left__time .load-block__progress::before {
+        background: #56ce10; }
+    .menu-left__time .load-block__wrap::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 7px;
+      height: 9px;
+      background: url("../img/page-anceta/image-time-glow.png") no-repeat; }
+  .menu-left__level {
+    max-width: 160px;
+    margin-left: -10px; }
+    .menu-left__level::before {
+      background: url("../img/page-anceta/image-border-level.png") no-repeat center/contain; }
+    .menu-left__level::after {
+      content: "";
+      position: absolute;
+      top: -13px;
+      left: -37px;
+      width: 49px;
+      height: 39px;
+      background: url("../img/page-anceta/image-bg-level-plane.png") no-repeat; }
+    .menu-left__level .load-block__progress {
+      background: -webkit-gradient(linear, left top, right top, from(#3d188c), color-stop(57%, #441c99), to(#431a9a));
+      background: -o-linear-gradient(left, #3d188c 0%, #441c99 57%, #431a9a 100%);
+      background: linear-gradient(to right, #3d188c 0%, #441c99 57%, #431a9a 100%); }
+      .menu-left__level .load-block__progress::before {
+        background: #8232ff; }
+  .menu-left__email {
+    position: relative; }
+  .menu-left__email-icon {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: url("../img/page-anceta/image-email-bg-border.png") no-repeat center/contain; }
+    .menu-left__email-icon::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 38px;
+      height: 39px;
+      background: url("../img/page-anceta/image-email-bg.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-hover.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-active.png") no-repeat center/contain; }
+    .menu-left__email-icon:hover::before {
+      background: url("../img/page-anceta/image-email-bg-hover.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-active.png") no-repeat center/contain; }
+    .menu-left__email-icon:active::before {
+      background: url("../img/page-anceta/image-email-bg-active.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-hover.png") no-repeat center/contain; }
+  .menu-left__email-value {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "FuturaDemic";
+    color: #fff;
+    bottom: -24px;
+    right: -17px;
+    width: 32px;
+    height: 32px;
+    background: url("../img/page-anceta/image-bg-email-value.png") no-repeat center/contain; }
+
+.load-block {
+  position: relative;
+  width: 100%;
+  height: 32px; }
+  .load-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; }
+  .load-block__wrap {
+    position: relative;
+    margin: 4px;
+    padding: 4px;
+    z-index: 2; }
+    .load-block__wrap::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), color-stop(29%, rgba(255, 255, 255, 0)));
+      background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 29%);
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 29%);
+      z-index: 2; }
+  .load-block__value {
+    position: relative;
+    height: 16px;
+    text-align: center;
+    color: #fff;
+    font-family: "FuturaDemic";
+    font-size: 14px;
+    line-height: 120%;
+    z-index: 1; }
+  .load-block__progress {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 25%; }
+    .load-block__progress::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 100%; }
+
+.menu-middle {
+  position: relative;
+  width: 100%;
+  margin-right: 15px; }
+  .menu-middle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 370px;
+    height: 29px;
+    background: url("../img/page-anceta/image-bg-middle-pipe.png") no-repeat center/contain;
+    z-index: 0; }
+  .menu-middle__wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 12px 34px 12px 29px;
+    height: 63px;
+    background: url("../img/page-anceta/image-bg-middle.png") no-repeat center/contain;
+    z-index: 4; }
+  .menu-middle__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .menu-middle__group:first-child {
+      margin-right: 15px; }
+    .menu-middle__group.--crystal .menu-middle__text {
+      padding-left: 50px; }
+      .menu-middle__group.--crystal .menu-middle__text::before {
+        width: 50px;
+        height: 30px;
+        background: url("../img/page-anceta/icon-diamond-new.png") no-repeat center/contain; }
+    .menu-middle__group.--time .menu-middle__text {
+      padding-left: 40px; }
+      .menu-middle__group.--time .menu-middle__text::before {
+        width: 29px;
+        height: 26px;
+        background: url("../img/page-anceta/icon-vip-card.png") no-repeat center/contain; }
+  .menu-middle__text {
+    position: relative;
+    margin-right: 5px;
+    font-family: "FuturaDemic";
+    font-size: 18px;
+    line-height: 120%;
+    color: #fff; }
+    .menu-middle__text::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+              transform: translate(0, -50%); }
+  .menu-middle__btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 4px;
+    height: 140%;
+    background: #e2b319;
+    z-index: -1; }
+
+.btn-add {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: url("../img/page-anceta/icon-btn-add-static.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active.png") no-repeat center/contain; }
+  .btn-add:hover {
+    background: url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active.png") no-repeat center/contain; }
+  .btn-add:active {
+    background: url("../img/page-anceta/icon-btn-add-active.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center/contain; }
+  .btn-add.--yellow {
+    background: url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center/contain; }
+    .btn-add.--yellow:hover {
+      background: url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center/contain; }
+    .btn-add.--yellow:active {
+      background: url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center/contain; }
+
+.menu-right {
+  position: relative; }
+  .menu-right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 315px;
+    height: 29px;
+    background: url("../img/page-anceta/image-bg-right-pipe.png.png") no-repeat center/contain; }
+  .menu-right__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .menu-right__btn:not(:last-child) {
+    margin-right: 10px; }
+
+.btn-var-two {
+  white-space: nowrap;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: "FuturaDemic";
+  font-size: 15px;
+  line-height: 120%;
+  overflow: hidden;
+  color: #fff;
+  background: url("../img/page-anceta/image-border-btn.png");
+  border-radius: 3px; }
+  .btn-var-two span {
+    position: relative;
+    z-index: 3; }
+  .btn-var-two:hover::after {
+    background-position: bottom center !important; }
+  .btn-var-two:active::after {
+    background-position: center !important; }
+  .btn-var-two::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: url("../img/page-anceta/blue-button-sprite.jpg");
+    border-radius: 3px; }
+  .btn-var-two.--green::after {
+    background: url("../img/page-anceta/green-btn-sprite.jpg"); }
+
+@media (max-width: 1000px) {
+  .btn-var-two {
+    font-size: 12px;
+    padding: 8px 15px; }
+  .main-menu__left-menu {
+    margin-right: 25px;
+    max-width: 226px; }
+  .main-menu__middle-menu {
+    max-width: 260px; }
+  .menu-left::before {
+    width: 270px;
+    height: 40px; }
+  .menu-left__group {
+    -ms-flex-preferred-size: 125px;
+        flex-basis: 125px; }
+  .menu-left__email-icon {
+    width: 40px;
+    height: 40px; }
+    .menu-left__email-icon::before {
+      width: 31px;
+      height: 31px; }
+  .menu-left__level {
+    max-width: 120px; }
+  .menu-left__energy {
+    -ms-flex-preferred-size: 70px;
+        flex-basis: 70px; }
+  .menu-left__time {
+    -ms-flex-preferred-size: 45px;
+        flex-basis: 45px; }
+    .menu-left__time .load-block__wrap::after {
+      top: 0;
+      right: 1px; }
+  .menu-left__email-value {
+    width: 23px;
+    height: 23px;
+    font-size: 10px;
+    bottom: -15px;
+    right: -11px; }
+  .load-block {
+    height: 25px; }
+    .load-block__value {
+      height: 9px;
+      font-size: 10px; }
+  .menu-middle::before {
+    left: -8px;
+    height: 25px;
+    width: 270px;
+    background: url("../img/page-anceta/mobile-plane.png") no-repeat center/contain; }
+  .menu-middle__wrap {
+    padding: 12px 26px 12px 23px; }
+  .menu-middle__text {
+    font-size: 14px; }
+  .menu-middle__group:first-child {
+    margin-right: 7px; }
+  .menu-middle__group.--time .menu-middle__text {
+    padding-left: 28px; }
+    .menu-middle__group.--time .menu-middle__text::before {
+      width: 22px;
+      height: 22px; }
+  .menu-middle__group.--crystal .menu-middle__text {
+    padding-left: 39px; }
+    .menu-middle__group.--crystal .menu-middle__text::before {
+      width: 38px;
+      height: 28px; }
+  .btn-add {
+    width: 22px;
+    height: 22px; }
+  .menu-right::before {
+    right: -6px;
+    height: 25px;
+    width: 245px;
+    background: url("../img/page-anceta/mobile-plane.png") no-repeat center/contain; } }
+
+@media (max-width: 767px) {
+  .main-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.content-anceta__wrapper {
+  position: relative;
+  margin: 0 30px;
+  padding: 15px 25px 15px 25px;
+  background: url("../img/page-anceta/image-bg-content.png") no-repeat center/cover; }
+
+.content-anceta__row {
+  display: grid;
+  grid-template-columns: 0.89fr 1fr;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.content-anceta__column:nth-child(2) {
+  position: relative;
+  padding: 75px 25px 70px 25px;
+  background: url("../img/page-anceta/image-bg-form.png") no-repeat center/cover; }
+  .content-anceta__column:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: url("../img/page-anceta/image-form-border.svg") no-repeat center/contain; }
+
+.content-anceta__image {
+  position: relative;
+  text-align: center;
+  margin-bottom: 35px; }
+  .content-anceta__image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-51%, -56%);
+        -ms-transform: translate(-51%, -56%);
+            transform: translate(-51%, -56%);
+    width: 171%;
+    height: 171%;
+    background: url("../img/page-anceta/image-bg-photo.png") no-repeat center/contain; }
+  .content-anceta__image img {
+    position: relative;
+    width: 310px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transform: rotate(2.5deg);
+        -ms-transform: rotate(2.5deg);
+            transform: rotate(2.5deg);
+    z-index: 2; }
+
+.content-anceta__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 10px;
+  max-width: 310px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(97, 52, 166, 0.4);
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2); }
+
+.content-anceta__btn {
+  max-width: 190px;
+  margin-bottom: 15px; }
+
+.content-anceta__text {
+  max-width: 270px;
+  font-size: 14px;
+  color: #fff;
+  line-height: 120%;
+  font-family: "FuturaBookC"; }
+
+.content-anceta__wrap-form {
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  z-index: 3; }
+
+.content-anceta__sign {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "FuturaDemic";
+  font-size: 15px;
+  color: #555351;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.content-anceta__title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "BodonicWeb";
+  font-size: 26px;
+  color: #555351;
+  line-height: 120%; }
+
+.content-anceta__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.content-anceta__form-group {
+  padding: 30px 0;
+  width: 100%; }
+
+.content-anceta__form-line {
+  width: 100%;
+  height: 2px;
+  background: url("../img/page-anceta/image-line.svg") no-repeat center/contain; }
+
+.content-anceta__wrap-input:not(:last-child) {
+  margin-bottom: 10px; }
+
+.content-anceta__form-button {
+  margin-top: 25px;
+  max-width: 220px;
+  width: 100%; }
+
+.wrap-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .wrap-input__name {
+    -ms-flex-preferred-size: 80px;
+        flex-basis: 80px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-family: "FuturaBookC";
+    font-size: 18px;
+    line-height: 120%;
+    color: #463a1a; }
+  .wrap-input__input {
+    position: relative;
+    -ms-flex-preferred-size: 220px;
+        flex-basis: 220px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    border-radius: 3px; }
+    .wrap-input__input input {
+      width: 100%;
+      height: 100%;
+      padding: 12px 13px;
+      font-family: "FuturaBookC";
+      font-size: 18px;
+      line-height: 120%;
+      color: #463a1a;
+      border: 2px solid transparent;
+      -o-border-image: -o-linear-gradient(bottom, #ecd28c 0%, #9f780f 30%, #eabf28 52%, #ffe6a3 76%, #f0d58e 85%);
+         border-image: -webkit-gradient(linear, left bottom, left top, from(#ecd28c), color-stop(30%, #9f780f), color-stop(52%, #eabf28), color-stop(76%, #ffe6a3), color-stop(85%, #f0d58e));
+         border-image: linear-gradient(to top, #ecd28c 0%, #9f780f 30%, #eabf28 52%, #ffe6a3 76%, #f0d58e 85%);
+      border-image-slice: 2;
+      background: -webkit-gradient(linear, left bottom, left top, from(rgba(224, 210, 172, 0.3)), to(rgba(192, 170, 110, 0.3)));
+      background: -o-linear-gradient(bottom, rgba(224, 210, 172, 0.3) 0%, rgba(192, 170, 110, 0.3) 100%);
+      background: linear-gradient(to top, rgba(224, 210, 172, 0.3) 0%, rgba(192, 170, 110, 0.3) 100%);
+      -webkit-box-shadow: inset 0px 2px 4px rgba(153, 120, 13, 0.6);
+              box-shadow: inset 0px 2px 4px rgba(153, 120, 13, 0.6); }
+      .wrap-input__input input::-webkit-input-placeholder {
+        color: #463a1a; }
+      .wrap-input__input input::-moz-placeholder {
+        color: #463a1a; }
+      .wrap-input__input input:-ms-input-placeholder {
+        color: #463a1a; }
+      .wrap-input__input input::-ms-input-placeholder {
+        color: #463a1a; }
+      .wrap-input__input input::placeholder {
+        color: #463a1a; }
+
+.footer {
+  position: relative;
+  padding: 15px 0 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .footer__link {
+    position: relative;
+    padding: 8px 20px;
+    font-family: "FuturaBookC";
+    font-size: 14px;
+    line-height: 120%;
+    color: #c2b083;
+    -webkit-box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.8); }
+    .footer__link:nth-child(1) {
+      border-radius: 5px 0 0 5px; }
+      .footer__link:nth-child(1)::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -1px;
+        width: 2px;
+        height: 2px;
+        background: #c2b083; }
+    .footer__link:nth-child(2) {
+      border-radius: 0 5px 5px 0; }
+
+@media (max-width: 1000px) {
+  .content-anceta__text {
+    font-size: 12px; }
+  .content-anceta__sign {
+    font-size: 11px; }
+  .content-anceta__title {
+    font-size: 18px; }
+  .content-anceta__image img {
+    width: 215px; }
+  .content-anceta__group {
+    padding: 15px 10px; }
+  .content-anceta__column:nth-child(2) {
+    padding: 55px 25px 55px 25px; }
+    .content-anceta__column:nth-child(2)::before {
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px; }
+  .content-anceta__wrap-form {
+    max-width: 230px; }
+  .content-anceta__title {
+    margin-bottom: 20px; }
+  .content-anceta__form-group {
+    padding: 25px 0; }
+  .content-anceta__form-button {
+    margin-top: 20px;
+    max-width: 160px; }
+  .wrap-input__name {
+    font-size: 14px;
+    -ms-flex-preferred-size: 60px;
+        flex-basis: 60px; }
+  .wrap-input__input input {
+    font-size: 14px;
+    padding: 7px 10px; }
+  .nice-select {
+    font-size: 14px;
+    padding: 7px 10px; }
+    .nice-select::after {
+      width: 15px;
+      height: 15px; } }
+
+@media (max-width: 768px) {
+  .content-anceta__wrapper {
+    padding: 45px 10px 25px 10px;
+    margin: 0 10px; }
+  .content-anceta__row {
+    grid-template-columns: 1fr;
+    gap: 20px; }
+  .content-anceta__column:nth-child(2) {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 15px; }
+  .content-anceta__image img {
+    width: 180px; }
+  .content-anceta__sign {
+    font-size: 9px; }
+  .content-anceta__title {
+    font-size: 16px; }
+  .content-anceta__form-group {
+    padding: 20px 0; }
+  .content-anceta__form-button {
+    margin-top: 15px;
+    max-width: 140px; }
+  .wrap-input__name {
+    font-size: 12px; }
+  .wrap-input__input input {
+    font-size: 12px; }
+  .nice-select {
+    font-size: 12px; }
+  .footer__link {
+    padding: 5px 10px; } }
+
+@media (max-width: 500px) {
+  .menu-middle {
+    margin-right: 0; } }
 
 .footer__wrap {
   padding: 40px 0; }

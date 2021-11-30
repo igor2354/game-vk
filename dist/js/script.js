@@ -30,3 +30,7 @@ document.addEventListener(
 	},
 	false
 );
+
+$(document).ready(function () {
+	$("select").niceSelect();
+});
