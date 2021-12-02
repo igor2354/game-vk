@@ -33,4 +33,8 @@ document.addEventListener(
 
 $(document).ready(function () {
 	$("select").niceSelect();
+
+	$(".js-scroll").mCustomScrollbar({
+		theme: "my-theme",
+	});
 });
