@@ -3271,7 +3271,7 @@ body.lock {
   .content-voting__slider-wrap::after {
     width: 55px;
     height: 110px;
-    bottom: -15px;
+    bottom: -5%;
     left: 3%; }
   .menu-voting {
     max-width: 390px; }
@@ -3303,6 +3303,8 @@ body.lock {
     font-size: 16px; }
   .content-voting__slider-wrap {
     padding: 0 65px; }
+    .content-voting__slider-wrap::after {
+      bottom: -7%; }
   .voting-slider__group {
     padding: 25px 20px; }
   .voting-slider__title {
