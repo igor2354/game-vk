@@ -2812,7 +2812,7 @@ body.lock {
       margin-right: 0;
       margin-bottom: 10px; } }
 
-.popup-diamonds__gorup {
+.popup-diamonds__controls {
   position: relative;
   padding: 2.6% 19%;
   margin-bottom: 10px;
@@ -2822,13 +2822,8 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Bold PlayFairDisplay';
-  text-align: center;
-  font-size: 20px;
-  line-height: 120%;
-  color: #fff;
   background: url("../img/page-buying-diamonds/switch.png") no-repeat center/contain; }
-  .popup-diamonds__gorup::before {
+  .popup-diamonds__controls::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -2840,6 +2835,60 @@ body.lock {
     height: 72px;
     background: url("../img/page-buying-diamonds/arrow.png") no-repeat center/contain; }
 
+.popup-diamonds.--trigger .popup-diamonds__controls::before {
+  -webkit-transform: translate(-39%, -50%) rotate(180deg);
+      -ms-transform: translate(-39%, -50%) rotate(180deg);
+          transform: translate(-39%, -50%) rotate(180deg); }
+
+.popup-diamonds__button {
+  cursor: pointer;
+  font-family: "Bold PlayFairDisplay";
+  text-align: center;
+  font-size: 20px;
+  line-height: 120%;
+  color: #cacaca; }
+  .popup-diamonds__button.active {
+    color: #fff; }
+
+.popup-diamonds__contents {
+  height: 460px; }
+
+.popup-diamonds__content {
+  display: none; }
+  .popup-diamonds__content.active {
+    display: block; }
+
+.popup-diamonds__content-item.--vip .item-popup-diamonds {
+  background: url("../img/page-buying-diamonds/item-popup-diamonds-bg-vip.png") no-repeat center/cover; }
+
+.popup-diamonds__content-item.--vip .item-popup-diamonds__pins span {
+  background: url("../img/page-buying-diamonds/pin-vip.png") no-repeat center/contain; }
+
+.popup-diamonds__content-item.--vip .item-popup-diamonds__name {
+  font-size: 30px;
+  color: #fff; }
+  .popup-diamonds__content-item.--vip .item-popup-diamonds__name span {
+    font-family: "FuturaBookC"; }
+
+.popup-diamonds__content-item.--vip .item-popup-diamonds::before,
+.popup-diamonds__content-item.--vip .item-popup-diamonds::after {
+  background: url("../img/page-buying-diamonds/loop-left-vip.png") no-repeat center/contain; }
+
+.popup-diamonds__content-item.--vip .item-popup-diamonds__value {
+  position: relative;
+  padding-left: 40px; }
+  .popup-diamonds__content-item.--vip .item-popup-diamonds__value::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 43px;
+    height: 22px;
+    background: url("../img/page-buying-diamonds/diamond-vip.png") no-repeat center/contain; }
+
 .popup-diamonds__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2849,7 +2898,11 @@ body.lock {
   row-gap: 10px; }
 
 .popup.--diamonds .popup__wrap {
-  position: relative; }
+  position: relative;
+  margin-top: 80px;
+  padding: 55px 70px 95px 70px;
+  max-width: 790px;
+  width: 100%; }
   .popup.--diamonds .popup__wrap::before {
     content: "";
     position: absolute;
@@ -2857,7 +2910,18 @@ body.lock {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../img/page-buying-diamonds/door.png") no-repeat center/contain; }
+    background: url("../img/page-buying-diamonds/door-center.png") no-repeat center/contain; }
+  .popup.--diamonds .popup__wrap::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    width: 100%;
+    height: 94%;
+    background: url("../img/page-buying-diamonds/door-right.png") no-repeat left center/contain; }
 
 .item-popup-diamonds {
   position: relative;
@@ -2977,6 +3041,112 @@ body.lock {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 53%;
             flex: 1 0 53%; }
+
+.banner-vip {
+  margin-top: 60px;
+  padding: 32px 30px;
+  position: relative;
+  background: url("../img/page-buying-diamonds/banner-vip-bg.png") no-repeat center/cover;
+  z-index: 2; }
+  .banner-vip__title {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 30px;
+    line-height: 120%;
+    color: #fff;
+    font-family: "FuturaDemic"; }
+    .banner-vip__title span {
+      font-family: "Kobzar KS"; }
+  .banner-vip__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .banner-vip__item {
+    font-family: "FuturaDemic";
+    font-size: 15px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff; }
+
+@media (max-width: 1000px) {
+  .popup.--diamonds .popup__wrap {
+    max-width: 610px;
+    padding: 40px 70px 50px 70px; }
+  .popup-diamonds__controls::before {
+    width: 52px;
+    height: 54px; }
+  .popup-diamonds__contents {
+    height: 390px; }
+  .popup-diamonds__button {
+    font-size: 15px; }
+  .popup-diamonds__content-item.--vip .item-popup-diamonds__name {
+    font-size: 22px; }
+  .banner-vip {
+    margin-top: 50px;
+    padding: 20px 20px; }
+    .banner-vip__title {
+      top: -15px;
+      font-size: 22px; }
+    .banner-vip__item {
+      font-size: 12px; }
+  .item-popup-diamonds {
+    padding: 17px 21px; }
+    .item-popup-diamonds__name {
+      font-size: 14px; }
+    .item-popup-diamonds__value {
+      font-size: 17px; }
+      .item-popup-diamonds__value span {
+        margin-left: 3px; }
+    .item-popup-diamonds__button {
+      padding: 8px 5px; } }
+
+@media (max-width: 767px) {
+  .popup.--diamonds .popup__wrap {
+    max-width: 560px; }
+  .popup-diamonds__list {
+    grid-template-columns: 1fr; }
+  .popup-diamonds__contents {
+    height: 348px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 0 5px; }
+  .banner-vip {
+    margin-top: 30px; } }
+
+@media (max-width: 570px) {
+  .popup.--diamonds .popup__wrap {
+    max-width: 290px;
+    padding: 50px 20px 50px 20px; }
+    .popup.--diamonds .popup__wrap::before {
+      background: url("../img/page-buying-diamonds/door-center-mobile.jpg") no-repeat center/contain; }
+  .popup-diamonds__button {
+    font-size: 10px; }
+  .popup-diamonds__contents {
+    height: 255px; }
+  .popup-diamonds__controls {
+    padding: 2.6% 16%; }
+  .popup-diamonds__controls::before {
+    width: 30px;
+    height: 30px; }
+  .item-popup-diamonds {
+    padding: 15px; }
+  .banner-vip__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .banner-vip__item:not(:last-child) {
+    margin-bottom: 15px; } }
 
 .page-voting {
   background: url("../img/page-voting/page-voiting-bg.png") no-repeat center/cover; }
