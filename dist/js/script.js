@@ -135,4 +135,5 @@ $(document).ready(function () {
 	$(".js-scroll").mCustomScrollbar({
 		theme: "my-theme",
 	});
+	
 });
