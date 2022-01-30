@@ -11,6 +11,18 @@ document.addEventListener(
 			},
 		});
 
+		let sliderPopupTypeTwo = new Swiper(".popup-type-two__slider-container", {
+			slidesPerView: 2,
+			watchOverflow: true,
+			spaceBetween: 20,
+			observer: true,
+			observeParents: true,
+			navigation: {
+				nextEl: ".popup-type-two__slider-next",
+				prevEl: ".popup-type-two__slider-prev",
+			},
+		});
+
 		let wrapCenterBg = document.querySelector(".page-load__group");
 
 		if (wrapCenterBg != null) {
@@ -125,6 +137,34 @@ document.addEventListener(
 				});
 			});
 		}
+
+		let arrTextCurve = document.querySelectorAll(".text-curved");
+
+		// if (arrTextCurve.length > 0) {
+		// 	arrTextCurve.forEach(element => {
+		// 		let stringEl = element.textContent;
+		// 		element.textContent = "";
+				
+		// 		if (stringEl.length > 0) {
+		// 			let count = 0;
+		// 			for (let i = 0; i < stringEl.length; i++) {
+		// 				if (i >= Math.floor(stringEl.length / 2)) {
+		// 					count = (stringEl.length - i);
+		// 				} else {
+		// 					count =  i;
+		// 				}
+						
+		// 				if (stringEl[i] == " ") {
+		// 					element.innerHTML = element.innerHTML + `<span style="transform: translate(0, ${count}px); margin: 0 2px">${stringEl[i]}</span>`;
+		// 				} else {
+		// 					element.innerHTML = element.innerHTML + `<span style="transform: translate(0, ${count}px)">${stringEl[i]}</span>`
+		// 				}
+		// 			}
+
+		// 			// element.innerHTML =  element.innerHTML.replace(/(.)/g, '<span>$1</span>');
+		// 		}
+		// 	});
+		// }
 	},
 	false
 );
