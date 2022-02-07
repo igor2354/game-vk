@@ -2844,6 +2844,30 @@ body.lock {
   .popup.--photo .popup-type-two__middle::before {
     top: -25%;
     height: 120%; }
+  .popup.--daily-bonus .popup__wrap {
+    max-width: 600px;
+    margin-bottom: 100px;
+    width: 100%; }
+    .popup.--daily-bonus .popup__wrap::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -41%);
+          -ms-transform: translate(-50%, -41%);
+              transform: translate(-50%, -41%);
+      width: 123%;
+      height: 119%;
+      background: url("../img/page-daily-bonus/image-box-bonus.png") no-repeat center/contain; }
+  .popup.--daily-bonus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background: url("../img/page-daily-bonus/popup-bg.png") no-repeat center/cover; }
 
 .popup-rules {
   position: relative;
@@ -2933,6 +2957,9 @@ body.lock {
     color: #463a1a; }
 
 @media (max-width: 1000px) {
+  .popup.--daily-bonus .popup__wrap {
+    max-width: 430px;
+    margin-bottom: 100px; }
   .popup-rules__title {
     font-size: calc(21px + 4 * ((100vw - 320px) / 680)); }
   .popup-rules__text-title {
@@ -2957,6 +2984,8 @@ body.lock {
       -o-border-image: url("../img/popup-result/border-image.svg");
          border-image: url("../img/popup-result/border-image.svg");
       border-image-slice: 110; }
+  .popup.--daily-bonus .popup__wrap {
+    max-width: 270px; }
   .popup-rules__text ul {
     margin-bottom: 15px; }
     .popup-rules__text ul li > ul,
@@ -4707,6 +4736,30 @@ body.lock {
   .popup.--photo .popup-type-two__middle::before {
     top: -25%;
     height: 120%; }
+  .popup.--daily-bonus .popup__wrap {
+    max-width: 600px;
+    margin-bottom: 100px;
+    width: 100%; }
+    .popup.--daily-bonus .popup__wrap::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -41%);
+          -ms-transform: translate(-50%, -41%);
+              transform: translate(-50%, -41%);
+      width: 123%;
+      height: 119%;
+      background: url("../img/page-daily-bonus/image-box-bonus.png") no-repeat center/contain; }
+  .popup.--daily-bonus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background: url("../img/page-daily-bonus/popup-bg.png") no-repeat center/cover; }
 
 .popup-rules {
   position: relative;
@@ -4796,6 +4849,9 @@ body.lock {
     color: #463a1a; }
 
 @media (max-width: 1000px) {
+  .popup.--daily-bonus .popup__wrap {
+    max-width: 430px;
+    margin-bottom: 100px; }
   .popup-rules__title {
     font-size: calc(21px + 4 * ((100vw - 320px) / 680)); }
   .popup-rules__text-title {
@@ -4820,6 +4876,8 @@ body.lock {
       -o-border-image: url("../img/popup-result/border-image.svg");
          border-image: url("../img/popup-result/border-image.svg");
       border-image-slice: 110; }
+  .popup.--daily-bonus .popup__wrap {
+    max-width: 270px; }
   .popup-rules__text ul {
     margin-bottom: 15px; }
     .popup-rules__text ul li > ul,
@@ -5083,6 +5141,178 @@ body.lock {
         flex-basis: 150px; }
   .popup-type-two__btn {
     max-width: 150px; } }
+
+.popup-daily-bonus {
+  position: relative;
+  z-index: 3; }
+  .popup-daily-bonus__banner {
+    position: relative;
+    padding: 70px 55px 80px 55px;
+    background: url("../img/page-daily-bonus/image-banner-bg.png") no-repeat center/cover; }
+    .popup-daily-bonus__banner::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      background: url("../img/page-daily-bonus/border-text.svg") no-repeat center/contain; }
+  .popup-daily-bonus__title {
+    margin-bottom: 30px;
+    font-family: 'Bold PlayFairDisplay';
+    font-size: 30px;
+    line-height: 120%;
+    color: #555351;
+    text-align: center; }
+  .popup-daily-bonus__text {
+    text-align: center;
+    font-family: 'FuturaBookC';
+    font-size: 20px;
+    line-height: 120%; }
+  .popup-daily-bonus__list-days {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 30px;
+    margin-bottom: 80px; }
+    .popup-daily-bonus__list-days::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(0px + 30px);
+      right: calc(0px + 30px);
+      bottom: 0;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1), inset 0px 10px 5px rgba(38, 14, 49, 0.75);
+              box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1), inset 0px 10px 5px rgba(38, 14, 49, 0.75);
+      -webkit-clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+              clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+      z-index: 1; }
+  .popup-daily-bonus__item-days {
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 calc(100% / 5);
+            flex: 0 1 calc(100% / 5);
+    padding: 1rem;
+    font-family: 'FuturaDemic';
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+    opacity: 0.55;
+    z-index: 2; }
+    .popup-daily-bonus__item-days.active {
+      opacity: 1;
+      text-shadow: 1px 2px 2px rgba(105, 80, 14, 0.75);
+      background: url("../img/page-daily-bonus/bonus-day-active.png") no-repeat center/contain; }
+  .popup-daily-bonus__list-bonus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .popup-daily-bonus__item-bonus {
+    opacity: 0.5; }
+    .popup-daily-bonus__item-bonus.active {
+      position: relative;
+      opacity: 1;
+      -webkit-animation: bonusAnim 2s infinite ease-in-out;
+              animation: bonusAnim 2s infinite ease-in-out;
+      z-index: 5; }
+  .popup-daily-bonus__btn-wrap {
+    margin-top: 30px;
+    text-align: center; }
+  .popup-daily-bonus__btn {
+    max-width: 220px;
+    width: 100%; }
+
+@-webkit-keyframes bonusAnim {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes bonusAnim {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@media (max-width: 1000px) {
+  .popup-daily-bonus__title {
+    margin-bottom: 20px;
+    font-size: 22px; }
+  .popup-daily-bonus__text {
+    font-size: 14px; }
+  .popup-daily-bonus__list-days {
+    padding: 0 20px;
+    margin-bottom: 50px; }
+  .popup-daily-bonus__item-days {
+    padding: 0.8rem;
+    font-size: 13px; }
+  .popup-daily-bonus__banner {
+    padding: 60px 55px 60px 55px; }
+    .popup-daily-bonus__banner::before {
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px; }
+  .popup-daily-bonus__btn {
+    max-width: 160px; }
+  @-webkit-keyframes bonusAnim {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 15px);
+              transform: translate(0, 15px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } }
+  @keyframes bonusAnim {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); }
+    50% {
+      -webkit-transform: translate(0, 15px);
+              transform: translate(0, 15px); }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0); } } }
+
+@media (max-width: 768px) {
+  .popup-daily-bonus__title {
+    margin-bottom: 15px;
+    font-size: 16px; }
+  .popup-daily-bonus__text {
+    font-size: 11px; }
+  .popup-daily-bonus__list-days {
+    padding: 0 15px;
+    margin-bottom: 40px; }
+  .popup-daily-bonus__item-days {
+    padding: 0.4rem;
+    font-size: 9px; }
+  .popup-daily-bonus__banner {
+    padding: 35px 35px 30px 35px; }
+    .popup-daily-bonus__banner::before {
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px; }
+  .popup-daily-bonus__btn {
+    max-width: 140px; } }
 
 .footer__wrap {
   padding: 40px 0; }
