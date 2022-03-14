@@ -165,6 +165,31 @@ document.addEventListener(
 		// 		}
 		// 	});
 		// }
+
+		let competitionBlock = document.querySelector(".content-competition__block");
+		let cardsCompetition = document.querySelectorAll(".card-competition");
+
+		if (competitionBlock != null) {
+			if (cardsCompetition.length > 0) {
+				cardsCompetition.forEach(element => {
+					element.addEventListener("mouseenter", function() {
+						if (element.classList.contains("--right")) {
+							competitionBlock.classList.add("--right");
+						}
+
+						if (element.classList.contains("--left")) {
+							competitionBlock.classList.add("--left");
+						}
+					});
+
+					element.addEventListener("mouseleave", function() {
+						competitionBlock.classList.remove("--right");
+						competitionBlock.classList.remove("--left");
+					});
+				});
+			}
+		}
+
 	},
 	false
 );
