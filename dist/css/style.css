@@ -2983,9 +2983,6 @@ body.lock {
     height: 100%;
     opacity: 0.85;
     background: url("../img/page-daily-bonus/popup-bg.png") no-repeat center/cover; }
-  .popup .popup__close {
-    top: 10%;
-    right: 10%; }
 
 .popup-rules {
   position: relative;
@@ -4878,9 +4875,6 @@ body.lock {
     height: 100%;
     opacity: 0.85;
     background: url("../img/page-daily-bonus/popup-bg.png") no-repeat center/cover; }
-  .popup .popup__close {
-    top: 10%;
-    right: 10%; }
 
 .popup-rules {
   position: relative;
@@ -6098,6 +6092,14 @@ body.lock {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
     z-index: 6; }
+  .content-collection__info {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    z-index: 5; }
 
 @media (max-width: 1000px) {
   .page-collection {
@@ -6392,6 +6394,290 @@ body.lock {
       .item-collection__hint-fav::before {
         width: 8px;
         height: 8px; } }
+
+.page-collection .main__content {
+  position: relative; }
+
+.page-collection.--shop .content-collection__box-pc {
+  display: none; }
+
+.page-collection.--shop .content-collection__box-mobile {
+  display: block; }
+
+.page-collection.--shop .content-collection__top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-collection.--shop .content-collection__link.--col::before {
+  content: none; }
+
+.page-collection.--shop .content-collection__link.--col span {
+  -webkit-transform: translate(0, -11px);
+      -ms-transform: translate(0, -11px);
+          transform: translate(0, -11px); }
+
+.page-collection.--shop .content-collection__bottom {
+  max-width: 440px;
+  -webkit-transform: translate(23%, 0);
+      -ms-transform: translate(23%, 0);
+          transform: translate(23%, 0); }
+
+.page-collection.--shop .item-collection {
+  margin-right: 10px; }
+  .page-collection.--shop .item-collection__hint-group {
+    min-width: 65%; }
+  .page-collection.--shop .item-collection__hint-group-diam {
+    margin-right: 0; }
+    .page-collection.--shop .item-collection__hint-group-diam::before {
+      content: none; }
+
+.user-info {
+  max-width: 330px;
+  width: 100%;
+  padding: 30px 20px 20px 20px;
+  background: url("../img/popup-collection/bg-user-info-1.png") no-repeat center/cover; }
+  .user-info__wrap {
+    padding: 25px;
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background: url("../img/popup-collection/bg-user-info-2.png") no-repeat center/cover; }
+  .user-info__group-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: -50px; }
+  .user-info__link {
+    display: inline-block;
+    padding: 15px;
+    font-family: "FuturaDemic";
+    font-size: 15px;
+    line-height: 120%;
+    color: #fff;
+    background: url("../img/popup-collection/user-info-link-bg.png") no-repeat center/cover; }
+    .user-info__link.active {
+      background: url("../img/popup-collection/user-info-link-bg-active.png") no-repeat center/cover; }
+    .user-info__link:not(:last-child) {
+      margin-right: 5px; }
+  .user-info__group-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px; }
+  .user-info__avatar {
+    position: relative;
+    margin-right: 20px; }
+    .user-info__avatar::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      bottom: -15px;
+      right: -15px;
+      border: 18px solid transparent;
+      -o-border-image: url("../img/popup-collection/avatar-border.png");
+         border-image: url("../img/popup-collection/avatar-border.png");
+      border-image-slice: 18; }
+  .user-info__name {
+    font-family: "FuturaBookC";
+    font-size: 25px;
+    line-height: 120%;
+    color: #222121; }
+  .user-info__league {
+    font-family: "BodonicItalicWeb";
+    font-size: 15px;
+    line-height: 120%;
+    color: #222121; }
+  .user-info__wishes-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "FuturaDemic";
+    font-size: 15px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #2e2e2e; }
+    .user-info__wishes-title span {
+      white-space: nowrap;
+      padding: 0 20px;
+      letter-spacing: 3px; }
+    .user-info__wishes-title::before {
+      content: "";
+      display: block;
+      height: 1px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      background: rgba(0, 0, 0, 0.3); }
+    .user-info__wishes-title::after {
+      content: "";
+      display: block;
+      height: 1px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      background: rgba(0, 0, 0, 0.3); }
+  .user-info__wishes-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px; }
+  .user-info__wishes-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .user-info__wishes-item:not(:last-child) {
+      margin-right: 15px; }
+    .user-info__wishes-item.item-wishes {
+      height: 70px; }
+      .user-info__wishes-item.item-wishes.--empty::before {
+        content: none; }
+      .user-info__wishes-item.item-wishes:not(.--empty):not(.--link)::before {
+        content: none;
+        opacity: 1;
+        top: initial;
+        left: initial;
+        right: 0;
+        bottom: 0;
+        width: 30px;
+        height: 29px;
+        background: url("../img/lk/mini-arr.png") no-repeat center/contain; }
+      .user-info__wishes-item.item-wishes:not(.--empty):not(.--link).selected::before {
+        content: ""; }
+  .user-info__message-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "FuturaDemic";
+    font-size: 15px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #2e2e2e; }
+    .user-info__message-title span {
+      white-space: nowrap;
+      padding: 0 20px;
+      letter-spacing: 3px; }
+    .user-info__message-title::before {
+      content: "";
+      display: block;
+      height: 1px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      background: rgba(0, 0, 0, 0.3); }
+    .user-info__message-title::after {
+      content: "";
+      display: block;
+      height: 1px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      background: rgba(0, 0, 0, 0.3); }
+  .user-info__message-text {
+    margin-bottom: 5px; }
+    .user-info__message-text textarea {
+      min-height: 140px;
+      width: 100%;
+      resize: none;
+      -webkit-box-shadow: inset 0px 1px 7px #9a770e;
+              box-shadow: inset 0px 1px 7px #9a770e;
+      background: #e2d5b5;
+      border-radius: 5px; }
+  .user-info__btn {
+    width: 100%; }
+    .user-info__btn span {
+      position: relative;
+      padding-left: 40px; }
+      .user-info__btn span::before {
+        content: "";
+        position: absolute;
+        top: -11px;
+        left: -10px;
+        width: 55px;
+        height: 30px;
+        background: url("../img/popup-type-two/diamond-mini.png") no-repeat center/contain; }
+
+@media (max-width: 1000px) {
+  .page-collection.--shop .main__content {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto; }
+  .page-collection.--shop .content-collection__bottom {
+    max-width: 310px; }
+  .page-collection.--shop .item-collection {
+    margin-right: 5px; }
+  .content-collection__info {
+    left: 20px; }
+  .user-info {
+    max-width: 260px;
+    padding: 25px 15px 15px 15px; }
+    .user-info__group-link {
+      margin-top: -40px; }
+    .user-info__link {
+      padding: 10px;
+      font-size: 12px; }
+    .user-info__wrap {
+      padding: 20px; }
+    .user-info__name {
+      font-size: 20px; }
+    .user-info__league {
+      font-size: 12px; }
+    .user-info__avatar {
+      max-width: 70px; }
+    .user-info__wishes-title {
+      font-size: 12px; }
+      .user-info__wishes-title span {
+        padding: 0 8px; }
+    .user-info__wishes-list {
+      margin-bottom: 20px; }
+    .user-info__wishes-item:not(:last-child) {
+      margin-right: 5px; }
+    .user-info__wishes-item.item-wishes {
+      height: 60px; }
+    .user-info__message-title {
+      font-size: 12px; }
+      .user-info__message-title span {
+        padding: 0 8px; }
+    .user-info__message-text textarea {
+      min-height: 110px; } }
+
+@media (max-width: 767px) {
+  .page-collection.--shop .main__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .page-collection.--shop .content-collection {
+    min-height: 550px; }
+    .page-collection.--shop .content-collection__bottom {
+      max-width: 450px;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none; }
+  .content-collection__info {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    margin-bottom: 10px; } }
+
+@media (max-width: 767px) {
+  .page-collection.--shop .content-collection {
+    min-height: 360px; }
+    .page-collection.--shop .content-collection__bottom {
+      max-width: 276px; } }
 
 .footer__wrap {
   padding: 40px 0; }
