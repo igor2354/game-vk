@@ -1,0 +1,50 @@
+/*page-load*/
+@font-face {
+	font-family: "FuturaDemic";
+	src: url("../../fonts/page-load/futurademic-webfont.ttf");
+}
+@font-face {
+	font-family: "FuturaBookC";
+	src: url("../../fonts/page-load/futurabookc-webfont.ttf");
+}
+@font-face {
+	font-family: "BodonicItalicWeb";
+	src: url("../../fonts/page-load/bodonic-italic-webfont.ttf");
+}
+@font-face {
+	font-family: "BodonicWeb";
+	src: url("../../fonts/page-load/bodonic-webfont.ttf");
+}
+@font-face {
+	font-family: "Ftr65_c";
+	src: url("../../fonts/page-load/ftr65__c-webfont.ttf");
+}
+@font-face {
+	font-family: "FuturaMediumc";
+	src: url("../../fonts/page-load/futuramediumc-webfont.ttf");
+}
+
+@font-face {
+	font-family: "bodonicwebfont";
+	src: url("../../fonts/page-load/bodonicwebfont.eot");
+	src: url("../../fonts/page-load/bodonicwebfont.eot") format("embedded-opentype"), url("../../fonts/page-load/bodonicwebfont.woff2") format("woff2"), url("../../fonts/page-load/bodonicwebfont.woff") format("woff"), url("../../fonts/page-load/bodonicwebfont.ttf") format("truetype"), url("../../fonts/page-load/bodonicwebfont.svg#bodonicwebfont") format("svg");
+}
+
+@font-face {
+	font-family: "Kobzar KS";
+	src: url("../../fonts/page-load/kobzarks.eot");
+	src: url("../../fonts/page-load/kobzarks.eot?#iefix") format("embedded-opentype"), url("../../fonts/page-load/kobzarks.woff") format("woff"), url("../../fonts/page-load/kobzarks.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Bold PlayFairDisplay";
+	src: url("../../fonts/page-load/PlayfairDisplay-Bold_0.ttf");
+}
+
+@font-face {
+	font-family: "Italic PlayFairDisplay";
+	src: url("../../fonts/page-load/PlayfairDisplay-Italic_0.ttf");
+}
+/*page-load*/

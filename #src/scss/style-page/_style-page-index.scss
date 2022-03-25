@@ -1,0 +1,193 @@
+.page-load {
+	&__wrap {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		background: url("../img/page-load/img-center-line.png") no-repeat center / cover, url("../img/page-load/img-bg-1.png") no-repeat center / cover;
+	}
+
+	&__bg {
+	}
+
+	&__group {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		max-height: 740px;
+		// padding: 26% 0;
+
+		& svg {
+			width: 100%;
+			height: 100%;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, calc(-50% - 5px));
+			width: 100%;
+			height: 100%;
+			background: url("../img/page-load/Figure.svg") no-repeat center / contain;
+		}
+	}
+
+	&__center {
+		position: relative;
+		z-index: 5;
+	}
+
+	&__sign {
+		font-family: "FuturaDemic";
+		padding-bottom: 10px;
+		font-size: 16px;
+		line-height: 120%;
+		color: #fff;
+		& span {
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+				width: 30px;
+				height: 1px;
+				background: #fff;
+			}
+
+			&::before {
+				left: -50px;
+			}
+
+			&::after {
+				right: -50px;
+			}
+		}
+	}
+
+	&__title {
+		font-family: "Bold PlayFairDisplay";
+		font-size: 38px;
+		line-height: 120%;
+		color: #fff;
+		white-space: nowrap;
+	}
+
+	&__text {
+		position: absolute;
+		bottom: 25%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-family: "FuturaBookC";
+		margin: 75px auto 0 auto;
+		max-width: 235px;
+		font-size: 20px;
+		line-height: 120%;
+		text-align: center;
+		color: #fff;
+		z-index: 5;
+	}
+
+	&__progress {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		font-family: "Italic PlayFairDisplay";
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 120%;
+		color: #fff;
+		z-index: 5;
+	}
+
+	&__progress-bg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, calc(-50% - 5px)) rotate(180deg);
+		width: 100%;
+		height: 96%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.page-load {
+		&__sign {
+			@include adaptiv-font(20, 10);
+		}
+
+		&__title {
+			@include adaptiv-font(38, 18);
+		}
+
+		&__text {
+			@include adaptiv-font(20, 10);
+		}
+
+		&__progress {
+			@include adaptiv-font(25, 14);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.page-load {
+		&__text {
+			max-width: 170px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.page-load {
+		&__wrap {
+			background: url("../img/page-load/img-center-line-320.png") no-repeat center / cover, url("../img/page-load/img-bg-1.png") no-repeat center / cover;
+		}
+
+		&__group {
+			&::before {
+				transform: translate(-50%, calc(-50% - 3px));
+			}
+		}
+
+		&__sign {
+			padding-bottom: 5px;
+		}
+
+		&__text {
+			max-width: 100px;
+		}
+
+		&__progress-bg {
+			transform: translate(-50%, calc(-50% - 3px)) rotate(180deg);
+			// height: 95%;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.page-load {
+		&__progress-bg {
+			// transform: translate(-50%, calc(-50% - 2px)) rotate(180deg);
+			height: 95%;
+		}
+	}
+}
+
+@media (max-width: 345px) {
+	.page-load {
+		&__progress-bg {
+			// transform: translate(-50%, calc(-50% - 2px)) rotate(180deg);
+			height: 94.5%;
+		}
+	}
+}

@@ -1,0 +1,203 @@
+.popup-daily-bonus {
+    position: relative;
+    z-index: 3;
+    &__banner {
+        position: relative;
+        padding: 70px 55px 80px 55px;
+        background: url("../img/page-daily-bonus/image-banner-bg.png") no-repeat center / cover;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            background: url("../img/page-daily-bonus/border-text.svg") no-repeat center / contain;
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-family : 'Bold PlayFairDisplay';
+        font-size: 30px;
+        line-height: 120%;
+        color: #555351;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        font-family : 'FuturaBookC';
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    &__list-days {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        margin-bottom: 80px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc(0px + 30px);
+            right: calc(0px + 30px);
+            bottom: 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1), inset 0px 10px 5px rgba(38, 14, 49, 0.75);
+            clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
+            z-index: 1;
+        }
+    }
+
+    &__item-days {
+        position: relative;
+        flex: 0 1 calc(100% / 5);
+        padding: 1rem;
+        font-family : 'FuturaDemic';
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #fff;
+        opacity: 0.55;
+        z-index: 2;
+        &.active {
+            opacity: 1;
+            text-shadow: 1px 2px 2px  rgba(105, 80, 14, 0.75);;
+            background: url("../img/page-daily-bonus/bonus-day-active.png") no-repeat center / contain;
+        }
+    }
+
+    &__list-bonus {
+        display: flex;
+    }
+
+    &__item-bonus {
+        opacity: 0.5;
+        // width: 105px;
+        &.active {
+            position: relative;
+            opacity: 1;
+            animation: bonusAnim 2s infinite ease-in-out;
+            z-index: 5;
+        }
+        & img {
+            // max-width: initial;
+        }
+    }
+
+    &__btn-wrap {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__btn {
+        max-width: 220px;
+        width: 100%;
+    }
+}
+
+@keyframes bonusAnim {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, 25px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 1000px) {
+    .popup-daily-bonus {
+        &__title {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+
+        &__list-days {
+            padding: 0 20px;
+            margin-bottom: 50px;
+        }
+
+        &__item-days {
+            padding: 0.8rem;
+            font-size: 13px;
+        }
+
+        &__banner {
+            padding: 60px 55px 60px 55px;
+            &::before {
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+
+        &__btn {
+            max-width: 160px;
+        }
+    }
+
+    @keyframes bonusAnim {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        50% {
+            transform: translate(0, 15px);
+        }
+    
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .popup-daily-bonus {
+        &__title {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        &__text {
+            font-size: 11px;
+        }
+
+        &__list-days {
+            padding: 0 15px;
+            margin-bottom: 40px;
+        }
+
+        &__item-days {
+            padding: 0.4rem;
+            font-size: 9px;
+        }
+
+        &__banner {
+            padding: 35px 35px 30px 35px;
+            &::before {
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+
+        &__btn {
+            max-width: 140px;
+        }
+    }
+}

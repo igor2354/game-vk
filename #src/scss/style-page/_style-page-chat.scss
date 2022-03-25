@@ -1,0 +1,548 @@
+.page-chat {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		box-shadow: 0 0 200px rgba(0, 0, 0, 0.8) inset;
+		z-index: 30;
+		pointer-events: none;
+	}
+
+	& .main-menu {
+		z-index: 35;
+	}
+}
+
+.content-chat {
+	position: relative;
+	min-height: 550px;
+	height: 100%;
+	z-index: 3;
+	background: url("../img/page-chat/page-chat-bg.png") no-repeat 17% 100% / contain;
+
+	&__wrap {
+		height: 100%;
+		padding: 0 10px 0 40px;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 0.48fr;
+		gap: 40px;
+		height: 100%;
+	}
+
+	&__column {
+	}
+
+	&__field {
+	}
+
+	&__list {
+	}
+}
+
+.chat-field {
+	position: relative;
+	padding: 35px 25px 45px 45px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+
+	background: url("../img/page-chat/bg-chat-2.png") no-repeat center / cover;
+
+	&__top {
+	}
+
+	&__title {
+		text-align: center;
+		font-family: "BodonicWeb";
+		font-size: 30px;
+		line-height: 120%;
+		color: #555351;
+	}
+
+	&__middle {
+		flex-grow: 1;
+		max-height: 440px;
+		padding: 20px 0;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__wrap-input {
+		margin-right: 10px;
+		flex-grow: 1;
+	}
+
+	&__input {
+	}
+
+	&__submit {
+		max-width: 130px;
+		width: 100%;
+	}
+
+	&__close {
+		position: absolute;
+		top: -20px;
+		right: -20px;
+	}
+}
+
+.chat-list {
+	height: 100%;
+	padding: 20px 0 20px 20px;
+	background: url("../img/page-chat/bg-chat-1.png") no-repeat center / cover;
+
+	&__wrap {
+		position: relative;
+		max-height: 600px;
+		height: 100%;
+		padding: 20px 0 20px 0;
+		background: url("../img/page-chat/bg-chat-2.png") no-repeat center / cover;
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 50px;
+			background: linear-gradient(to top, #eee6cf 0%, rgba(238, 230, 207, 0.8) 50%, transparent 100%);
+		}
+
+		& .mCSB_container {
+			margin-right: 0;
+		}
+	}
+
+	&__list {
+		padding: 20px 0;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__empty {
+		display: none;
+	}
+
+	&__empty-image {
+		text-align: center;
+	}
+
+	&__empty-text {
+		margin-top: 20px;
+		text-align: center;
+		font-family: "Kobzar KS";
+		font-size: 50px;
+		line-height: 120%;
+		color: #4a3f7e;
+		transform: rotate(-10deg);
+	}
+
+	&.--empty {
+		& .chat-list__wrap {
+			height: 100%;
+
+			& .mCSB_container {
+				height: 100%;
+			}
+		}
+
+		& .chat-list__list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+		& .chat-list__empty {
+			display: block;
+		}
+	}
+}
+
+.user-chat {
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	padding: 10px 20px;
+
+	&::before {
+		opacity: 0;
+		visibility: hidden;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("../img/page-chat/bg-plane.png") no-repeat center / cover;
+		background-position: left;
+		transition: all 0.3s ease;
+	}
+
+	&:hover {
+		&::before {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		& .user-chat__name {
+			color: #fff;
+		}
+
+		& .user-chat__league {
+			color: #fff;
+		}
+	}
+
+	&.active {
+		&::before {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		& .user-chat__name {
+			color: #fff;
+		}
+
+		& .user-chat__league {
+			color: #fff;
+		}
+	}
+
+	&__avatar {
+		position: relative;
+		max-width: 90px;
+		margin-right: 25px;
+		& img {
+			border: 5px solid #fff;
+			box-shadow: 0 0 3px #000;
+		}
+	}
+
+	&__value {
+		position: absolute;
+		top: -12px;
+		right: -12px;
+		min-width: 27px;
+		min-height: 27px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: "FuturaDemic";
+		font-size: 12px;
+		line-height: 120%;
+		color: #fff;
+		border-radius: 50%;
+		background: #37b30d;
+	}
+
+	&__group {
+		position: relative;
+	}
+
+	&__name {
+		margin-bottom: 5px;
+		font-family: "FuturaBookC";
+		font-size: 25px;
+		line-height: 120%;
+		color: #222121;
+	}
+
+	&__league {
+		font-family: "BodonicItalicWeb";
+		font-size: 15px;
+		line-height: 120%;
+		color: #222121;
+	}
+}
+
+.chat-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+
+	&__image {
+		flex-shrink: 0;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		overflow: hidden;
+		& img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__text {
+		margin: 0 20px;
+		padding: 15px;
+		font-family: "FuturaBookC";
+		font-size: 18px;
+		line-height: 120%;
+		color: #463a1a;
+		background-color: #bfe3a9;
+		border-radius: 5px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	}
+
+	&__time {
+		font-family: "FuturaBookC";
+		font-size: 13px;
+		line-height: 120%;
+		color: #463a1a;
+	}
+
+	&__gifts-text {
+		font-family: "Kobzar KS";
+		font-size: 30px;
+		line-height: 100%;
+		color: #4a3f7e;
+		& span {
+			display: block;
+			transform: rotate(-10deg);
+			&:nth-child(2) {
+				margin-left: 20px;
+			}
+		}
+	}
+
+	&__gifts-wrap {
+		padding-top: 31px;
+		width: 217px;
+		height: 224px;
+		background: url("../img/page-chat/box.png") no-repeat center / contain;
+	}
+
+	&__gifts-name {
+		position: relative;
+		padding: 7px;
+		font-family: "FuturaDemic";
+		font-size: 15px;
+		line-height: 120%;
+		color: #fff;
+		z-index: 2;
+		border-radius: 3px;
+		background: url("../img/popup-collection/shadow.png") no-repeat center / cover;
+		max-width: 140px;
+		margin: 0 auto;
+		& span {
+			max-width: 130px;
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__gifts-image {
+		position: relative;
+		height: 110px;
+		text-align: center;
+		z-index: 2;
+		& img {
+			max-height: 100%;
+		}
+	}
+
+	&.--over {
+	}
+
+	&.--me:not(.--gifts) {
+		flex-direction: row-reverse;
+		& .chat-item__text {
+			background-color: #fbe2b5;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.page-chat {
+		min-height: initial;
+	}
+
+	.content-chat {
+		&__row {
+			gap: 25px;
+		}
+	}
+
+	.chat-field {
+		padding: 30px 20px 30px 30px;
+
+		&__title {
+			font-size: 24px;
+		}
+
+		&__close {
+			top: -10px;
+			right: -10px;
+		}
+	}
+
+	.chat-item {
+		&__text {
+			margin: 0px 15px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		&__time {
+			font-size: 11px;
+		}
+
+		&__item:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	.chat-list {
+		padding: 12px 0 12px 12px;
+		&__wrap {
+			max-height: 540px;
+		}
+
+		&__empty-text {
+			margin-top: 20px;
+			font-size: 38px;
+		}
+	}
+
+	.user-chat {
+		padding: 7px 20px 7px 15px;
+
+		&__avatar {
+			max-width: 70px;
+			margin-right: 15px;
+		}
+
+		&__value {
+			font-size: 10px;
+			min-width: 22px;
+			min-height: 22px;
+		}
+
+		&__name {
+			font-size: 20px;
+		}
+
+		&__league {
+			font-size: 11px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.content-chat {
+		background: url("../img/page-chat/page-chat-bg.png") no-repeat 0% 100% / contain;
+		&__row {
+			display: block;
+		}
+
+		&__wrap {
+			padding: 0 10px 0 30px;
+		}
+
+		&__column {
+			&.--pos {
+				// display: none;
+			}
+			&:nth-child(2) {
+				height: 100%;
+			}
+		}
+	}
+
+	.chat-field {
+		position: absolute;
+		top: 0;
+		left: 10px;
+		bottom: 0;
+		right: 10px;
+		z-index: 3;
+	}
+
+	.chat-list {
+		max-width: 440px;
+		margin: 0 0 0 auto;
+	}
+}
+
+@media (max-width: 500px) {
+	.chat-field {
+		padding: 30px 10px 30px 10px;
+
+		&__middle {
+			max-height: 410px;
+		}
+
+		&__bottom {
+			flex-direction: column;
+		}
+
+		&__wrap-input {
+			margin-bottom: 10px;
+			margin-right: 0;
+		}
+
+		&__submit {
+			max-width: 100%;
+		}
+	}
+
+	.chat-item {
+		&__image {
+			width: 34px;
+			height: 34px;
+		}
+
+		&__text {
+			margin: 0px 10px;
+			padding: 7px;
+			font-size: 10px;
+		}
+
+		&__time {
+			font-size: 10px;
+		}
+
+		&__gifts-wrap {
+			padding-top: 20px;
+			width: 160px;
+			height: 170px;
+		}
+
+		&__gifts-text {
+			font-size: 18px;
+		}
+
+		&__gifts-name {
+			padding: 5px;
+			max-width: 100px;
+			& span {
+				font-size: 12px;
+				max-width: 80px;
+			}
+		}
+
+		&__gifts-image {
+			height: 80px;
+		}
+	}
+}

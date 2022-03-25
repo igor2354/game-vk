@@ -1,0 +1,54 @@
+@font-face {
+    font-family : 'FuturaDemic';
+    src: url('fonts/futurademic-webfont.ttf');
+}
+@font-face {
+    font-family : 'FuturaBookC';
+    src: url('fonts/futurabookc-webfont.ttf');
+}
+@font-face {
+    font-family : 'BodonicItalicWeb';
+    src: url('fonts/bodonic-italic-webfont.ttf');
+}
+@font-face {
+    font-family : 'BodonicWeb';
+    src: url('fonts/bodonic-webfont.ttf');
+}
+@font-face {
+    font-family : 'Ftr65_c';
+    src: url('fonts/ftr65__c-webfont.ttf');
+}
+@font-face {
+    font-family : 'FuturaMediumc';
+    src: url('fonts/futuramediumc-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'bodonicwebfont';
+    src: url('fonts/bodonicwebfont.eot');
+    src: url('fonts/bodonicwebfont.eot') format('embedded-opentype'),
+    url('fonts/bodonicwebfont.woff2') format('woff2'),
+    url('fonts/bodonicwebfont.woff') format('woff'),
+    url('fonts/bodonicwebfont.ttf') format('truetype'),
+    url('fonts/bodonicwebfont.svg#bodonicwebfont') format('svg');
+}
+
+@font-face {
+    font-family: 'Kobzar KS';
+    src: url('fonts/kobzarks.eot');
+    src: url('fonts/kobzarks.eot?#iefix') format('embedded-opentype'),
+    url('fonts/kobzarks.woff') format('woff'),
+    url('fonts/kobzarks.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family : 'Bold PlayFairDisplay';
+    src: url('fonts/PlayfairDisplay-Bold_0.ttf');
+}
+
+@font-face {
+    font-family : 'Italic PlayFairDisplay';
+    src: url('fonts/PlayfairDisplay-Italic_0.ttf');
+}

@@ -1,0 +1,116 @@
+.page-order-sent {
+	background: url("../img/page-order-sent/image-bg-order-sent.png") no-repeat center / cover;
+}
+
+.page-order-sent .main__content {
+	padding: 0 15px;
+}
+
+.content-order-sent {
+	position: relative;
+	padding: 250px 20px 60px 20px;
+	max-width: 555px;
+	margin: 0 auto;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("../img/page-order-sent/image-bg-content-order-sent.png") no-repeat center / contain;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: -23%;
+		left: -40%;
+		width: 100%;
+		height: 100%;
+		background: url("../img/page-order-sent/image-latter-bg.png") no-repeat center/contain;
+		pointer-events: none;
+		z-index: 0;
+	}
+	&__wrap {
+		position: relative;
+		text-align: center;
+		z-index: 2;
+	}
+
+	&__title {
+		font-family: "Kobzar KS";
+		font-size: 50px;
+		line-height: 120%;
+		color: #4a3f7e;
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
+	&__sign {
+		max-width: 250px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		font-family: "FuturaBookC";
+		font-size: 18px;
+		line-height: 120%;
+		color: #2e2e2e;
+		text-align: center;
+	}
+
+	&__group-button {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__btn {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.content-order-sent {
+		&__title {
+			@include adaptiv-font(50, 30);
+			margin-bottom: 1.5em;
+		}
+
+		&::after {
+			top: -18%;
+			left: -34%;
+			width: 85%;
+			height: 85%;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.content-order-sent {
+		padding: 200px 20px 20px 20px;
+		&__title {
+			margin-bottom: 2em;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	.content-order-sent {
+		max-width: 300px;
+		padding: 130px 25px 20px 25px;
+		&::before {
+			background: url("../img/page-order-sent/image-bg-content-order-sent-mobile.png") no-repeat center / contain;
+		}
+
+		&__group-button {
+			flex-direction: column;
+		}
+
+		&__btn {
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

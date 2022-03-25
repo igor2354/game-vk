@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Kobzar KS';
+    src: url('kobzarks.eot');
+    src: url('kobzarks.eot?#iefix') format('embedded-opentype'),
+         url('kobzarks.woff') format('woff'),
+         url('kobzarks.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
