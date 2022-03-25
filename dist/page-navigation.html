@@ -105,15 +105,40 @@
                 </div>
 
             </div>
+
+            <div class="page-navigation__lsit">
+                <div class="page-navigation__item">
+                    <a href="./page-secret-hero-one.html">Главный герой этап 1</a>
+                </div>
+
+                <div class="page-navigation__item">
+                    <a href="./page-secret-hero-two.html">Главный герой этап 2</a>
+                </div>
+
+                <div class="page-navigation__item">
+                    <a href="./page-secret-hero-three.html">Главный герой этап 3</a>
+                </div>
+
+                <div class="page-navigation__item">
+                    <a href="./page-secret-hero-four.html">Главный герой этап 4</a>
+                </div>
+
+            </div>
         </div>
 
         <style>
+            .page-navigation {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
             .wrapper.--nav {
                 background: #fff;
             }
             
             .page-navigation__item {
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 color: #000;
                 font-size: 20px;
                 line-height: 120%;
