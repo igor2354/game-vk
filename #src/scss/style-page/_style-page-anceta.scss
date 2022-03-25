@@ -983,7 +983,8 @@
 		}
 
 		&__input {
-			& input {
+			& input,
+			& textarea {
 				font-size: 14px;
 				padding: 7px 10px;
 			}
@@ -1049,7 +1050,8 @@
 		}
 
 		&__input {
-			& input {
+			& input,
+			& textarea {
 				font-size: 12px;
 			}
 		}
