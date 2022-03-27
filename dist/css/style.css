@@ -8324,6 +8324,7 @@ body.lock {
     grid-template-columns: 1fr; } }
 
 .user-avatar {
+  position: relative;
   width: 206px;
   height: 202px;
   background: url("../img/page-secret-hero/image-avatar-bg-hero.png") no-repeat center/contain;
