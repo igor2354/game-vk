@@ -174,10 +174,32 @@
 		}
 	}
 
-	// & .popup__close {
-	// 	top: 10%;
-	// 	right: 10%;
-	// }
+	&.--less-user {
+		padding-top: 100px;
+		background: url("../img/page-secret-hero/image-bg-user-less.png") no-repeat center / cover;
+		& .popup__wrap {
+			position: relative;
+			padding: 65px 55px 65px 55px;
+			max-width: 615px;
+			max-height: 615px;
+			height: 100%;
+			width: 100%;
+			background: url("../img/page-anceta/image-bg-form.png") no-repeat center/cover;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				right: 15px;
+				bottom: 15px;
+				border: 75px solid transparent;
+				border-image: url("../img/popup-result/border-image.svg");
+				border-image-slice: 120;
+				z-index: 6;
+				pointer-events: none;
+			}
+		}
+	}
 }
 
 .popup-rules {
@@ -334,6 +356,21 @@
 		}
 
 		&.--rules {
+			& .popup__wrap {
+				padding: 45px 35px;
+				&::before {
+					top: 10px;
+					left: 10px;
+					right: 10px;
+					bottom: 10px;
+					border: 50px solid transparent;
+					border-image: url("../img/popup-result/border-image.svg");
+					border-image-slice: 110;
+				}
+			}
+		}
+
+		&.--less-user {
 			& .popup__wrap {
 				padding: 45px 35px;
 				&::before {
@@ -751,6 +788,88 @@
 		}
 
 		&__middle-wrap {
+		}
+	}
+}
+
+.popup-less-user {
+	&__title {
+		position: relative;
+		font-family: "Bold PlayFairDisplay";
+		font-size: 25px;
+		line-height: 120%;
+		color: #555351;
+		text-align: center;
+		padding-bottom: 25px;
+		margin-bottom: 10px;
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: url("../img/page-anceta/image-line.svg") no-repeat center/cover;
+		}
+	}
+
+	&__text {
+		font-family: "FuturaBookC";
+		padding: 15px 0;
+		font-size: 18px;
+		line-height: 120%;
+		color: #463a1a;
+	}
+
+	&__group-button {
+		margin-top: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__button {
+		flex-basis: 50%;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.popup-less-user {
+		&__title {
+			font-size: 22px;
+			padding-bottom: 15px;
+		}
+
+		&__text {
+			font-size: 14px;
+			padding: 10px 0;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.popup {
+		&.--less-user {
+			padding-top: 180px;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.popup-less-user {
+		&__group-button {
+			flex-direction: column;
+		}
+
+		&__button {
+			flex-basis: initial;
+			width: 100%;
+			&:not(:last-child) {
+				margin-right: 0px;
+				margin-bottom: 10px;
+			}
 		}
 	}
 }
