@@ -139,8 +139,8 @@
 	&__popup-leage {
 		right: initial;
 		left: 50%;
-		transform: translate(-50%, 0);		
-	} 
+		transform: translate(-50%, 0);
+	}
 
 	&__progress {
 		content: "";
@@ -199,6 +199,7 @@
 		align-items: center;
 		justify-content: center;
 		z-index: 5;
+		height: 213px;
 	}
 
 	&__gift {
@@ -501,7 +502,7 @@
 	&__icon {
 		width: 39px;
 		height: 39px;
-		background: url("../img/icons/icon-hint-static.png") no-repeat center / contain;
+		background: url('../img/icons/icon-question-desc.png') -10px -10px;
 	}
 
 	&__popup {
@@ -509,13 +510,13 @@
 
 	&:hover {
 		& .hint__icon {
-			background: url("../img/icons/icon-hint-hover.png") no-repeat center / contain;
+			background: url('../img/icons/icon-question-desc.png') -10px -69px;
 		}
 	}
 
 	&:active {
 		& .hint__icon {
-			background: url("../img/icons/icon-hint-active.png") no-repeat center / contain;
+			background: url('../img/icons/icon-question-desc.png') -10px -128px;
 		}
 	}
 }
@@ -593,8 +594,7 @@
 			}
 		}
 
-		&__gift {
-			width: 160px;
+		&__group-gift {
 			height: 180px;
 		}
 
@@ -650,8 +650,21 @@
 
 	.hint {
 		&__icon {
-			width: 30px;
-			height: 30px;
+			width: 35px;
+			height: 35px;
+			background: url('../img/icons/icon-question-tab.png') -10px -10px;
+		}
+	
+		&:hover {
+			& .hint__icon {
+				background: url('../img/icons/icon-question-tab.png') -10px -65px;
+			}
+		}
+	
+		&:active {
+			& .hint__icon {
+				background: url('../img/icons/icon-question-tab.png') -10px -120px;
+			}
 		}
 	}
 }
@@ -668,6 +681,26 @@
 			grid-template-columns: 1fr;
 			&::before {
 				content: none;
+			}
+		}
+	}
+
+	.hint {
+		&__icon {
+			width: 24px;
+			height: 24px;
+			background: url('../img/icons/icon-question-mobile.png') -10px -10px;
+		}
+	
+		&:hover {
+			& .hint__icon {
+				background: url('../img/icons/icon-question-mobile.png') -10px -54px;
+			}
+		}
+	
+		&:active {
+			& .hint__icon {
+				background: url('../img/icons/icon-question-mobile.png') -10px -98px;
 			}
 		}
 	}
@@ -756,6 +789,10 @@
 
 		&__middle {
 			margin-bottom: 10px;
+		}
+
+		&__group-gift {
+			height: 130px;
 		}
 
 		&__gift {

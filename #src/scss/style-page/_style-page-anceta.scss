@@ -19,6 +19,7 @@
 			border-style: solid;
 			border-image-source: url("../img/page-anceta/main-bg-border.png");
 			border-image-slice: 10;
+			pointer-events: none;
 		}
 	}
 	&__content {

@@ -138,41 +138,13 @@ document.addEventListener(
 			});
 		}
 
-		let arrTextCurve = document.querySelectorAll(".text-curved");
-
-		// if (arrTextCurve.length > 0) {
-		// 	arrTextCurve.forEach(element => {
-		// 		let stringEl = element.textContent;
-		// 		element.textContent = "";
-				
-		// 		if (stringEl.length > 0) {
-		// 			let count = 0;
-		// 			for (let i = 0; i < stringEl.length; i++) {
-		// 				if (i >= Math.floor(stringEl.length / 2)) {
-		// 					count = (stringEl.length - i);
-		// 				} else {
-		// 					count =  i;
-		// 				}
-						
-		// 				if (stringEl[i] == " ") {
-		// 					element.innerHTML = element.innerHTML + `<span style="transform: translate(0, ${count}px); margin: 0 2px">${stringEl[i]}</span>`;
-		// 				} else {
-		// 					element.innerHTML = element.innerHTML + `<span style="transform: translate(0, ${count}px)">${stringEl[i]}</span>`
-		// 				}
-		// 			}
-
-		// 			// element.innerHTML =  element.innerHTML.replace(/(.)/g, '<span>$1</span>');
-		// 		}
-		// 	});
-		// }
-
 		let competitionBlock = document.querySelector(".content-competition__block");
 		let cardsCompetition = document.querySelectorAll(".card-competition");
 
 		if (competitionBlock != null) {
 			if (cardsCompetition.length > 0) {
-				cardsCompetition.forEach(element => {
-					element.addEventListener("mouseenter", function() {
+				cardsCompetition.forEach((element) => {
+					element.addEventListener("mouseenter", function () {
 						if (element.classList.contains("--right")) {
 							competitionBlock.classList.add("--right");
 						}
@@ -182,7 +154,7 @@ document.addEventListener(
 						}
 					});
 
-					element.addEventListener("mouseleave", function() {
+					element.addEventListener("mouseleave", function () {
 						competitionBlock.classList.remove("--right");
 						competitionBlock.classList.remove("--left");
 					});
@@ -190,6 +162,8 @@ document.addEventListener(
 			}
 		}
 
+		const da = new DynamicAdapt("max");
+		da.init();
 	},
 	false
 );
@@ -198,6 +172,14 @@ $(document).ready(function () {
 	$("select").niceSelect();
 
 	$(".js-scroll").mCustomScrollbar({
+		theme: "my-theme",
+	});
+
+	$(".nice-select .list").mCustomScrollbar({
+		theme: "my-theme",
+	});
+
+	$(".popup-diamonds__contents").mCustomScrollbar({
 		theme: "my-theme",
 	});
 	

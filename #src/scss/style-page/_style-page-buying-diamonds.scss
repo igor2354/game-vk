@@ -96,9 +96,14 @@
 		grid-template-columns: 1fr 1fr;
 		column-gap: 5px;
 		row-gap: 10px;
+		padding: 0 5px;
 	}
 
 	&__item {
+	}
+
+	& .mCSB_inside > .mCSB_container {
+		margin-right: 0px;
 	}
 }
 
@@ -133,7 +138,7 @@
 
 .item-popup-diamonds {
 	position: relative;
-	padding: 20px 25px;
+	padding: 20px 18px;
 	border-radius: 2px;
 	background: url("../img/page-buying-diamonds/item-popup-diamonds-bg.png") no-repeat center / cover;
 
@@ -354,7 +359,7 @@
 	}
 
 	.item-popup-diamonds {
-		padding: 17px 21px;
+		padding: 17px 15px;
 		&__name {
 			font-size: 14px;
 		}
@@ -387,10 +392,14 @@
 		}
 
 		&__contents {
-			height: 348px;
+			height: 340px;
 			overflow-x: hidden;
 			overflow-y: scroll;
 			padding: 0 5px;
+		}
+
+		& .mCSB_inside > .mCSB_container {
+			margin-right: 15px;
 		}
 	}
 
@@ -435,6 +444,16 @@
 
 	.item-popup-diamonds {
 		padding: 15px;
+
+		&__value {
+			font-size: 14px;
+			flex: 1 0 35%;
+			padding: 5px 8px;
+		}
+
+		&__button {
+			flex: 1 0 65%;
+		}
 	}
 
 	.banner-vip {

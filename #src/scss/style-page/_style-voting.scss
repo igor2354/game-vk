@@ -82,12 +82,58 @@
 
 	&__slide {
 		position: relative;
-		&:hover {
+		&.--done {
 			& .voting-slider__group {
 				opacity: 1;
 				visibility: visible;
 			}
+
+			& .voting-slider__rating-group {
+				display: none;
+			}
 		}
+
+		&:not(.--done):hover {
+			& .voting-slider__rating-group {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	&__rating-group {
+		position: absolute;
+		left: 0;
+		bottom: 20px;
+		width: 100%;
+		padding: 10px 15px 0 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		background: url("../img/page-voting/image-star-bg.png") no-repeat center / cover;
+	}
+
+	&__rating {
+		margin-right: 15px;
+		margin-bottom: 10px;
+		padding: 0;
+		background: none;
+		&::after {
+			content: none;
+		}
+	}
+
+	&__rating-btn {
+		margin-bottom: 10px;
+		max-width: 110px;
+		width: 100%;
+	}
+
+	&__rating-group {
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease;
 	}
 
 	&__image {
@@ -226,6 +272,10 @@
 	z-index: 5;
 	&::before {
 		content: "";
+	}
+
+	&__add-fiends {
+		pointer-events: none;
 		position: absolute;
 		left: 0;
 		bottom: 0;
@@ -234,7 +284,26 @@
 		transform: translate(-90%, 0);
 		background: url("../img/page-voting/add-freinds.png") no-repeat center / contain;
 		z-index: 3;
+
+		& a {
+			pointer-events: all;
+			font-family: "FuturaDemic";
+			font-size: 15px;
+			line-height: 120%;
+			color: #272626;
+			max-width: 110px;
+			position: absolute;
+			transform: rotate(-13deg);
+			top: 10%;
+			left: 0;
+			display: block;
+			text-align: center;
+			&:hover {
+				color: rgb(67, 26, 154);
+			}
+		}
 	}
+
 	&::after {
 		content: "";
 		position: absolute;
@@ -266,9 +335,14 @@
 		font-family: "FuturaDemic";
 		font-size: 15px;
 		color: #7c704c;
-		&:hover {
+		&:not(.--disabled):hover {
 			color: #ae8d2e;
 		}
+
+		&.--disabled {
+			cursor: not-allowed;
+		}
+
 		&.current {
 			color: #fff;
 			&::before {
@@ -391,6 +465,17 @@
 		&::before {
 			display: none;
 		}
+
+		&__add-fiends {
+			width: 145px;
+			height: 100px;
+			left: 15%;
+			& a {
+				font-size: 12px;
+				max-width: 90px;
+				left: -8px;
+			}
+		}
 	}
 }
 
@@ -429,6 +514,14 @@
 		&__button {
 			margin-bottom: 15px;
 		}
+
+		&__prev-small {
+			margin-right: 10px;
+		}
+
+		&__next-small {
+			margin-left: 10px;
+		}
 	}
 
 	.menu-voting {
@@ -440,6 +533,10 @@
 
 		&__link {
 			font-size: 10px;
+		}
+
+		&__add-fiends {
+			left: 35%;
 		}
 	}
 }
@@ -461,6 +558,13 @@
 	.voting-slider {
 		&__navigation {
 			margin-top: 40px;
+			margin-left: 120px;
+		}
+	}
+
+	.menu-voting {
+		&__add-fiends {
+			left: 45%;
 		}
 	}
 }

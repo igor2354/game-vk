@@ -1,26 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./css/nice-select.css" />
-		<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Document</title>
-
-		<!-- HEADER -->
-
-
+@@include("../components/_header.html")
 <link rel="stylesheet" href="./css/page-load/fonts.css">
 </head>
 
 <body>
-    <div class="wrapper">
+	<div class="wrapper">
 
-        <div class="page-secret-hero main-wrap container --stage-recruit-empty">
+        <div class="page-competition main-wrap container">
 
-            <div class="main">
+            <div class="main">            
 
                 <div class="main__wrap">
 
@@ -34,14 +21,14 @@
                                     <img src="./img/page-anceta/image-w-bg.png" alt="">
                                 </div>
                             </div>
-
+                            
 
                             <div class="menu-left__group">
 
                                 <div class="menu-left__level load-block">
                                     <div class="load-block__wrap">
                                         <div class="load-block__progress"></div>
-
+            
                                         <div class="load-block__value"><span>1 уровень</span> </div>
                                     </div>
                                 </div>
@@ -51,15 +38,15 @@
                                     <div class="menu-left__energy load-block">
                                         <div class="load-block__wrap">
                                             <div class="load-block__progress"></div>
-
+            
                                             <div class="load-block__value"><span>100/100</span></div>
                                         </div>
                                     </div>
-
+            
                                     <div class="menu-left__time load-block">
                                         <div class="load-block__wrap">
                                             <div class="load-block__progress"></div>
-
+            
                                             <div class="load-block__value"><span>05:00</span></div>
                                         </div>
                                     </div>
@@ -79,19 +66,19 @@
 
                         <div class="main-menu__middle-menu menu-middle">
                             <div class="menu-middle__wrap">
-
+            
                                 <div class="menu-middle__group --crystal">
                                     <div class="menu-middle__text"><span>999</span></div>
                                     <div class="menu-middle__btn btn-add"></div>
                                 </div>
-
+            
                                 <div class="menu-middle__group --time">
                                     <div class="menu-middle__text"><span>01:21:59</span></div>
                                     <div class="menu-middle__btn btn-add --yellow"></div>
                                 </div>
-
+            
                             </div>
-
+            
                         </div>
 
                         <div class="main-menu__right menu-right">
@@ -108,38 +95,64 @@
                     </div>
 
                     <div class="main__content">
-                        <div class="main__content-wrap content-secret-hero">
-                            <div class="content-secret-hero__wrap">
-                                <div class="content-secret-hero__group-link">
-                                    <a href="#" class="content-secret-hero__link"><span>Главный герой</span> </a>
-                                    <a href="#" class="content-secret-hero__link active"><span>Участники</span>  </a>
+                        <div class="main__content-wrap content-competition --step-2">
+                            <div class="content-competition__block">
+                                <div class="content-competition__postament">
+                                    <img src="./img/page-competition/image-postament.png" alt="">
                                 </div>
-                                <div class="content-secret-hero__group">
 
-                                    <div class="content-secret-hero__title">
-                                        <span>У вас нет анкеты для участия.</span>
+                                <div class="content-competition__pointer">
+                                    <img src="./img/page-competition/image-pointer.png" alt="">
+                                </div>
+
+                                <div class="content-competition__card card-competition --left">
+                                    <div class="card-competition__ves"><img src="./img/page-competition/image-ves.png" alt=""></div>
+
+                                    <div class="card-competition__group">
+                                        <div class="card-competition__image"><img src="./img/page-competition/image-w-1.jpg" alt=""></div>
+                                        <a href="#" class="card-competition__button btn-main">Выбрать</a>
+                                    </div>
+                                </div>
+
+                                <div class="content-competition__card card-competition --right">
+                                    <div class="card-competition__ves"><img src="./img/page-competition/image-ves.png" alt=""></div>
+
+                                    <div class="card-competition__group">
+                                        <div class="card-competition__image"><img src="./img/page-competition/image-w-1.jpg" alt=""></div>
+                                        <a href="#" class="card-competition__button btn-main">Выбрать</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-competition__fav competition-fav">
+                                <div class="competition-fav__name"><span>Ваш фаворит — Анастасия</span></div>
+
+                                <div class="competition-fav__image">
+                                    <img src="./img/page-competition/image-w-1.jpg" alt="">
+                                </div>
+
+                                <div class="competition-fav__group">
+                                    <div class="competition-fav__rating star-rating">
+                                        <ul class="star-rating__list">
+                                            <li class="current" style="width: 60%"><span class="star1"></span></li>
+                                            <li><span class="star2"></span></li>
+                                            <li><span class="star3"></span></li>
+                                            <li><span class="star4"></span></li>
+                                            <li><span class="star5"></span></li>
+                                        </ul>
                                     </div>
 
-                                    <div class="content-secret-hero__couple recruit-users">
-                                        <div class="recruit-users__empty">
-                                            <div class="recruit-users__empty-info secret-user-info">Что бы создать комнату у вас должна быть анкета в конкурсе. Создать анкету можно кликнув по кнопке ниже</div>
-                                            <a href="#" class="recruit-users__empty-button btn-main">Создать анкету</a>
-                                        </div>
-                                    </div>
+                                    <a href="#" class="competition-fav__btn-assess btn-var-two --yellow">
+                                        <span>Оценить</span>
+                                    </a>
 
+                                    <a href="#" class="competition-fav__btn-on">Голосовать дальше →</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="main__footer footer">
-                        <a href="#" class="footer__link">Правила конкурса</a>
-                        <a href="#" class="footer__link">Обратная связь</a>
-                    </div>
-
                 </div>
-
-
 
             </div>
 
@@ -147,22 +160,4 @@
 
     </div>
 
-    <!-- FOOTER -->
-
-
-
-<!-- // FOOTER -->
-
-
-
-</div>
-
-
-<script src="./js/swiper-bundle.min.js"></script>
-<script src="./js/jquery.js"></script>
-<script src="./js/jquery.nice-select.min.js"></script>
-<script src="./js/jquery.mCustomScrollbar.js"></script>
-<script src="./js/script.js"></script>
-</body>
-
-</html>
+    @@include("../components/_footer.html")
