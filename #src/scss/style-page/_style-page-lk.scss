@@ -510,13 +510,13 @@
 
 	&:hover {
 		& .hint__icon {
-			background: url('../img/icons/icon-question-desc.png') -10px -69px;
+			background-position: -10px -69px;
 		}
 	}
 
 	&:active {
 		& .hint__icon {
-			background: url('../img/icons/icon-question-desc.png') -10px -128px;
+			background-position: -10px -128px;
 		}
 	}
 }
@@ -657,13 +657,13 @@
 	
 		&:hover {
 			& .hint__icon {
-				background: url('../img/icons/icon-question-tab.png') -10px -65px;
+				background-position: -10px -65px;
 			}
 		}
 	
 		&:active {
 			& .hint__icon {
-				background: url('../img/icons/icon-question-tab.png') -10px -120px;
+				background-position: -10px -120px;
 			}
 		}
 	}
@@ -694,13 +694,13 @@
 	
 		&:hover {
 			& .hint__icon {
-				background: url('../img/icons/icon-question-mobile.png') -10px -54px;
+				background-position: -10px -54px;
 			}
 		}
 	
 		&:active {
 			& .hint__icon {
-				background: url('../img/icons/icon-question-mobile.png') -10px -98px;
+				background-position: -10px -98px;
 			}
 		}
 	}

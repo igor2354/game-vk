@@ -108,7 +108,7 @@
 			left: 0;
 			width: 100%;
 			height: 50%;
-			background: url("../img/popup-type-two/firework.png") no-repeat center bottom / cover;
+			background: url("../img/popup-type-two/firework.png") no-repeat center bottom / contain;
 		}
 
 		& .popup-type-two__middle {
@@ -177,6 +177,7 @@
 	&.--less-user {
 		padding-top: 100px;
 		background: url("../img/page-secret-hero/image-bg-user-less.png") no-repeat center / cover;
+		z-index: 10;
 		& .popup__wrap {
 			position: relative;
 			padding: 65px 55px 65px 55px;
@@ -319,6 +320,12 @@
 			& .popup__wrap {
 				max-width: 430px;
 				margin-bottom: 100px;
+			}
+		}
+		
+		&.--congrat {
+			&::before {
+				background: url("../img/popup-type-two/firework.png") no-repeat center bottom / cover;
 			}
 		}
 	}
