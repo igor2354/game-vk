@@ -3062,8 +3062,7 @@ textarea::-webkit-scrollbar-thumb {
     background: url("../img/page-daily-bonus/popup-bg.png") no-repeat center/cover; }
   .popup.--less-user {
     padding-top: 100px;
-    background: url("../img/page-secret-hero/image-bg-user-less.png") no-repeat center/cover;
-    z-index: 10; }
+    background: url("../img/page-secret-hero/image-bg-user-less.png") no-repeat center/cover; }
     .popup.--less-user .popup__wrap {
       position: relative;
       padding: 65px 55px 65px 55px;
@@ -5171,8 +5170,7 @@ textarea::-webkit-scrollbar-thumb {
     background: url("../img/page-daily-bonus/popup-bg.png") no-repeat center/cover; }
   .popup.--less-user {
     padding-top: 100px;
-    background: url("../img/page-secret-hero/image-bg-user-less.png") no-repeat center/cover;
-    z-index: 10; }
+    background: url("../img/page-secret-hero/image-bg-user-less.png") no-repeat center/cover; }
     .popup.--less-user .popup__wrap {
       position: relative;
       padding: 65px 55px 65px 55px;
