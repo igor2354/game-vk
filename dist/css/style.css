@@ -149,9 +149,9 @@ body.lock {
   background: url("../img/icons/sprite-icon-prev-big-desc.png") -10px -10px;
   z-index: 5; }
   .icon-prev-big:hover {
-    background: url("../img/icons/sprite-icon-prev-big-desc.png") -10px -96px; }
+    background-position: -10px -96px; }
   .icon-prev-big:active {
-    background: url("../img/icons/sprite-icon-prev-big-desc.png") -10px -182px; }
+    background-position: -10px -182px; }
 
 .icon-next-big {
   cursor: pointer;
@@ -162,9 +162,9 @@ body.lock {
   background: url("../img/icons/sprite-icon-next-big-desc.png") -10px -10px;
   z-index: 5; }
   .icon-next-big:hover {
-    background: url("../img/icons/sprite-icon-next-big-desc.png") -10px -96px; }
+    background-position: -10px -96px; }
   .icon-next-big:active {
-    background: url("../img/icons/sprite-icon-next-big-desc.png") -10px -182px; }
+    background-position: -10px -182px; }
 
 @media (max-width: 1000px) {
   .icon-prev-big {
@@ -172,17 +172,17 @@ body.lock {
     height: 51px;
     background: url("../img/icons/sprite-icon-prev-big-tab.png") -10px -10px; }
     .icon-prev-big:hover {
-      background: url("../img/icons/sprite-icon-prev-big-tab.png") -10px -81px; }
+      background-position: -10px -81px; }
     .icon-prev-big:active {
-      background: url("../img/icons/sprite-icon-prev-big-tab.png") -10px -152px; }
+      background-position: -10px -152px; }
   .icon-next-big {
     width: 35px;
     height: 51px;
     background: url("../img/icons/sprite-icon-next-big-tab.png") -10px -10px; }
     .icon-next-big:hover {
-      background: url("../img/icons/sprite-icon-next-big-tab.png") -10px -81px; }
+      background-position: -10px -81px; }
     .icon-next-big:active {
-      background: url("../img/icons/sprite-icon-next-big-tab.png") -10px -152px; } }
+      background-position: -10px -152px; } }
 
 @media (max-width: 768px) {
   .icon-prev-big {
@@ -190,17 +190,17 @@ body.lock {
     height: 37px;
     background: url("../img/icons/sprite-icon-prev-big-mobile.png") -10px -10px; }
     .icon-prev-big:hover {
-      background: url("../img/icons/sprite-icon-prev-big-mobile.png") -10px -67px; }
+      background-position: -10px -67px; }
     .icon-prev-big:active {
-      background: url("../img/icons/sprite-icon-prev-big-mobile.png") -10px -124px; }
+      background-position: -10px -124px; }
   .icon-next-big {
     width: 25px;
     height: 37px;
     background: url("../img/icons/sprite-icon-next-big-mobile.png") -10px -10px; }
     .icon-next-big:hover {
-      background: url("../img/icons/sprite-icon-next-big-mobile.png") -10px -67px; }
+      background-position: -10px -67px; }
     .icon-next-big:active {
-      background: url("../img/icons/sprite-icon-next-big-mobile.png") -10px -124px; } }
+      background-position: -10px -124px; } }
 
 .star-rating {
   position: relative;
@@ -1751,9 +1751,9 @@ textarea::-webkit-scrollbar-thumb {
   height: 39px;
   background: url("../img/welcome-screen/sprite-icon-close.png") -10px -10px; }
   .close-icon:hover {
-    background: url("../img/welcome-screen/sprite-icon-close.png") -10px -69px; }
+    background-position: -10px -69px; }
   .close-icon:active {
-    background: url("../img/welcome-screen/sprite-icon-close.png") -10px -128px; }
+    background-position: -10px -128px; }
 
 .icon-prev {
   cursor: pointer;
@@ -1763,9 +1763,9 @@ textarea::-webkit-scrollbar-thumb {
           filter: drop-shadow(-10px 12px 10px rgba(0, 0, 0, 0.5));
   background: url("../img/welcome-screen/sprite-icon-prev.png") -10px -10px; }
   .icon-prev:hover {
-    background: url("../img/welcome-screen/sprite-icon-prev.png") -10px -70px; }
+    background-position: -10px -70px; }
   .icon-prev:active {
-    background: url("../img/welcome-screen/sprite-icon-prev.png") -10px -130px; }
+    background-position: -10px -130px; }
 
 .icon-next {
   cursor: pointer;
@@ -1775,9 +1775,9 @@ textarea::-webkit-scrollbar-thumb {
           filter: drop-shadow(10px 12px 10px rgba(0, 0, 0, 0.5));
   background: url("../img/welcome-screen/sprite-icon-next.png") -10px -10px; }
   .icon-next:hover {
-    background: url("../img/welcome-screen/sprite-icon-next.png") -10px -70px; }
+    background-position: -10px -70px; }
   .icon-next:active {
-    background: url("../img/welcome-screen/sprite-icon-next.png") -10px -130px; }
+    background-position: -10px -130px; }
 
 .slider-welcome {
   border-radius: 100%; }
@@ -2005,25 +2005,25 @@ textarea::-webkit-scrollbar-thumb {
     height: 24px;
     background: url("../img/welcome-screen/sprite-icon-prev-mobile.png") -10px -10px; }
     .icon-prev:hover {
-      background: url("../img/welcome-screen/sprite-icon-prev-mobile.png") -10px -54px; }
+      background-position: -10px -54px; }
     .icon-prev:active {
-      background: url("../img/welcome-screen/sprite-icon-prev-mobile.png") -10px -98px; }
+      background-position: -10px -98px; }
   .icon-next {
     width: 15px;
     height: 25px;
     background: url("../img/welcome-screen/sprite-icon-next-mobile.png") -10px -10px; }
     .icon-next:hover {
-      background: url("../img/welcome-screen/sprite-icon-next-mobile.png") -10px -55px; }
+      background-position: -10px -55px; }
     .icon-next:active {
-      background: url("../img/welcome-screen/sprite-icon-next-mobile.png") -10px -100px; }
+      background-position: -10px -100px; }
   .close-icon {
     width: 25px;
     height: 25px;
     background: url("../img/welcome-screen/sprite-icon-close-mobile.png") -10px -10px; }
     .close-icon:hover {
-      background: url("../img/welcome-screen/sprite-icon-close-mobile.png") -10px -55px; }
+      background-position: -10px -55px; }
     .close-icon:active {
-      background: url("../img/welcome-screen/sprite-icon-close-mobile.png") -10px -100px; } }
+      background-position: -10px -100px; } }
 
 @media (max-width: 500px) {
   .welcome-popup__wrap::before {
@@ -2280,11 +2280,11 @@ textarea::-webkit-scrollbar-thumb {
               transform: translate(-50%, -50%);
       width: 38px;
       height: 39px;
-      background: url("../img/page-anceta/image-email-bg.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-hover.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-active.png") no-repeat center/contain; }
+      background: url("../img/page-anceta/sprite-image-email-bg-1000.png") -10px -10px; }
     .menu-left__email-icon:hover::before {
-      background: url("../img/page-anceta/image-email-bg-hover.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-active.png") no-repeat center/contain; }
+      background-position: -10px -69px; }
     .menu-left__email-icon:active::before {
-      background: url("../img/page-anceta/image-email-bg-active.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg.png") no-repeat center/contain, url("../img/page-anceta/image-email-bg-hover.png") no-repeat center/contain; }
+      background-position: -10px -128px; }
   .menu-left__email-value {
     position: absolute;
     display: -webkit-box;
@@ -2441,17 +2441,17 @@ textarea::-webkit-scrollbar-thumb {
   position: relative;
   width: 30px;
   height: 30px;
-  background: url("../img/page-anceta/icon-btn-add-static.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active.png") no-repeat center/contain; }
+  background: url("../img/page-anceta/sprite-btn-add-1000.png") -10px -10px; }
   .btn-add:hover {
-    background: url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active.png") no-repeat center/contain; }
+    background-position: -10px -60px; }
   .btn-add:active {
-    background: url("../img/page-anceta/icon-btn-add-active.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center/contain; }
+    background-position: -10px -110px; }
   .btn-add.--yellow {
-    background: url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center/contain; }
+    background: url("../img/page-anceta/sprite-btn-add-yellow-1000.png") -10px -10px; }
     .btn-add.--yellow:hover {
-      background: url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center/contain; }
+      background-position: -10px -60px; }
     .btn-add.--yellow:active {
-      background: url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center/contain, url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center/contain; }
+      background-position: -10px -110px; }
 
 .menu-right {
   position: relative; }
@@ -2557,7 +2557,12 @@ textarea::-webkit-scrollbar-thumb {
     height: 40px; }
     .menu-left__email-icon::before {
       width: 31px;
-      height: 31px; }
+      height: 31px;
+      background: url("../img/page-anceta/sprite-image-email-bg-768.png") -10px -10px; }
+    .menu-left__email-icon:hover::before {
+      background-position: -10px -62px; }
+    .menu-left__email-icon:active::before {
+      background-position: -10px -114px; }
   .menu-left__level {
     max-width: 120px; }
   .menu-left__energy {
@@ -2603,7 +2608,18 @@ textarea::-webkit-scrollbar-thumb {
       height: 28px; }
   .btn-add {
     width: 22px;
-    height: 22px; }
+    height: 22px;
+    background: url("../img/page-anceta/sprite-btn-add-768.png") -10px -10px; }
+    .btn-add:hover {
+      background-position: -10px -52px; }
+    .btn-add:active {
+      background-position: -10px -94px; }
+    .btn-add.--yellow {
+      background: url("../img/page-anceta/sprite-btn-add-yellow-768.png") -10px -10px; }
+      .btn-add.--yellow:hover {
+        background-position: -10px -52px; }
+      .btn-add.--yellow:active {
+        background-position: -10px -94px; }
   .menu-right::before {
     right: -6px;
     height: 25px;
@@ -3030,7 +3046,7 @@ textarea::-webkit-scrollbar-thumb {
     left: 0;
     width: 100%;
     height: 50%;
-    background: url("../img/popup-type-two/firework.png") no-repeat center bottom/cover; }
+    background: url("../img/popup-type-two/firework.png") no-repeat center bottom/contain; }
   .popup.--congrat .popup-type-two__middle::before {
     top: -22%;
     height: 110%; }
@@ -3184,6 +3200,8 @@ textarea::-webkit-scrollbar-thumb {
   .popup.--daily-bonus .popup__wrap {
     max-width: 430px;
     margin-bottom: 100px; }
+  .popup.--congrat::before {
+    background: url("../img/popup-type-two/firework.png") no-repeat center bottom/cover; }
   .popup-rules__title {
     font-size: calc(21px + 4 * ((100vw - 320px) / 680)); }
   .popup-rules__text-title {
@@ -4969,10 +4987,10 @@ textarea::-webkit-scrollbar-thumb {
   background: url("../img/icons/icon-question-desc.png") -10px -10px; }
 
 .hint:hover .hint__icon {
-  background: url("../img/icons/icon-question-desc.png") -10px -69px; }
+  background-position: -10px -69px; }
 
 .hint:active .hint__icon {
-  background: url("../img/icons/icon-question-desc.png") -10px -128px; }
+  background-position: -10px -128px; }
 
 @media (max-width: 1000px) {
   .content-lk.--participant .content-lk__item-option-column:nth-child(2) {
@@ -5044,9 +5062,9 @@ textarea::-webkit-scrollbar-thumb {
     height: 35px;
     background: url("../img/icons/icon-question-tab.png") -10px -10px; }
   .hint:hover .hint__icon {
-    background: url("../img/icons/icon-question-tab.png") -10px -65px; }
+    background-position: -10px -65px; }
   .hint:active .hint__icon {
-    background: url("../img/icons/icon-question-tab.png") -10px -120px; } }
+    background-position: -10px -120px; } }
 
 @media (max-width: 767px) {
   .content-lk.--participant .content-lk__row {
@@ -5061,9 +5079,9 @@ textarea::-webkit-scrollbar-thumb {
     height: 24px;
     background: url("../img/icons/icon-question-mobile.png") -10px -10px; }
   .hint:hover .hint__icon {
-    background: url("../img/icons/icon-question-mobile.png") -10px -54px; }
+    background-position: -10px -54px; }
   .hint:active .hint__icon {
-    background: url("../img/icons/icon-question-mobile.png") -10px -98px; } }
+    background-position: -10px -98px; } }
 
 @media (max-width: 500px) {
   .content-lk.--participant .content-lk__item-option-column:nth-child(2) {
@@ -5245,7 +5263,7 @@ textarea::-webkit-scrollbar-thumb {
     left: 0;
     width: 100%;
     height: 50%;
-    background: url("../img/popup-type-two/firework.png") no-repeat center bottom/cover; }
+    background: url("../img/popup-type-two/firework.png") no-repeat center bottom/contain; }
   .popup.--congrat .popup-type-two__middle::before {
     top: -22%;
     height: 110%; }
@@ -5399,6 +5417,8 @@ textarea::-webkit-scrollbar-thumb {
   .popup.--daily-bonus .popup__wrap {
     max-width: 430px;
     margin-bottom: 100px; }
+  .popup.--congrat::before {
+    background: url("../img/popup-type-two/firework.png") no-repeat center bottom/cover; }
   .popup-rules__title {
     font-size: calc(21px + 4 * ((100vw - 320px) / 680)); }
   .popup-rules__text-title {

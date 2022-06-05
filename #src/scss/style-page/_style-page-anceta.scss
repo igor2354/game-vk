@@ -244,17 +244,17 @@
 			transform: translate(-50%, -50%);
 			width: 38px;
 			height: 39px;
-			background: url("../img/page-anceta/image-email-bg.png") no-repeat center / contain, url("../img/page-anceta/image-email-bg-hover.png") no-repeat center / contain, url("../img/page-anceta/image-email-bg-active.png") no-repeat center / contain;
+			background: url('../img/page-anceta/sprite-image-email-bg-1000.png') -10px -10px;
 		}
 		&:hover {
 			&::before {
-				background: url("../img/page-anceta/image-email-bg-hover.png") no-repeat center / contain, url("../img/page-anceta/image-email-bg.png") no-repeat center / contain, url("../img/page-anceta/image-email-bg-active.png") no-repeat center / contain;
+				background-position: -10px -69px;
 			}
 		}
 
 		&:active {
 			&::before {
-				background: url("../img/page-anceta/image-email-bg-active.png") no-repeat center / contain, url("../img/page-anceta/image-email-bg.png") no-repeat center / contain, url("../img/page-anceta/image-email-bg-hover.png") no-repeat center / contain;
+				background-position: -10px -128px;
 			}
 		}
 	}
@@ -429,25 +429,23 @@
 	position: relative;
 	width: 30px;
 	height: 30px;
-	background: url("../img/page-anceta/icon-btn-add-static.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-active.png") no-repeat center / contain;
-
+	background: url('../img/page-anceta/sprite-btn-add-1000.png') -10px -10px;
 	&:hover {
-		background: url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-static.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-active.png") no-repeat center / contain;
+		background-position: -10px -60px;
 	}
 
 	&:active {
-		background: url("../img/page-anceta/icon-btn-add-active.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-static.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-hover.png") no-repeat center / contain;
+		background-position: -10px -110px;
 	}
 
 	&.--yellow {
-		background: url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center / contain;
-
+		background: url('../img/page-anceta/sprite-btn-add-yellow-1000.png') -10px -10px;
 		&:hover {
-			background: url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center / contain;
+			background-position: -10px -60px;
 		}
-
+	
 		&:active {
-			background: url("../img/page-anceta/icon-btn-add-active-yellow.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-static-yellow.png") no-repeat center / contain, url("../img/page-anceta/icon-btn-add-hover-yellow.png") no-repeat center / contain;
+			background-position: -10px -110px;
 		}
 	}
 }
@@ -598,6 +596,18 @@
 			&::before {
 				width: 31px;
 				height: 31px;
+				background: url('../img/page-anceta/sprite-image-email-bg-768.png') -10px -10px;
+			}
+			&:hover {
+				&::before {
+					background-position: -10px -62px;
+				}
+			}
+
+			&:active {
+				&::before {
+					background-position: -10px -114px;
+				}
 			}
 		}
 
@@ -685,6 +695,24 @@
 	.btn-add {
 		width: 22px;
 		height: 22px;
+		background: url('../img/page-anceta/sprite-btn-add-768.png') -10px -10px;
+		&:hover {
+			background-position: -10px -52px;
+		}
+	
+		&:active {
+			background-position: -10px -94px;
+		}
+		&.--yellow {
+				background: url('../img/page-anceta/sprite-btn-add-yellow-768.png') -10px -10px;
+				&:hover {
+					background-position: -10px -52px;
+				}
+			
+				&:active {
+					background-position: -10px -94px;
+				}
+		}
 	}
 
 	.menu-right {

@@ -73,10 +73,10 @@ body.lock {
 	filter: drop-shadow(10px 12px 10px rgba(0, 0, 0, 0.5));
 	background: url('../img/icons/sprite-icon-prev-big-desc.png') -10px -10px;
 	&:hover {
-		background: url('../img/icons/sprite-icon-prev-big-desc.png') -10px -96px;
+		background-position:  -10px -96px;
 	}
 	&:active {
-		background: url('../img/icons/sprite-icon-prev-big-desc.png') -10px -182px;
+		background-position:  -10px -182px;
 	}
 	z-index: 5;
 }
@@ -88,10 +88,10 @@ body.lock {
 	filter: drop-shadow(10px 12px 10px rgba(0, 0, 0, 0.5));
 	background: url('../img/icons/sprite-icon-next-big-desc.png') -10px -10px;
 	&:hover {
-		background: url('../img/icons/sprite-icon-next-big-desc.png') -10px -96px;
+		background-position: -10px -96px;
 	}
 	&:active {
-		background: url('../img/icons/sprite-icon-next-big-desc.png') -10px -182px;
+		background-position: -10px -182px;
 	}
 	z-index: 5;
 }
@@ -102,10 +102,10 @@ body.lock {
 		height: 51px;
 		background: url('../img/icons/sprite-icon-prev-big-tab.png') -10px -10px;
 		&:hover {
-			background: url('../img/icons/sprite-icon-prev-big-tab.png') -10px -81px;
+			background-position: -10px -81px;
 		}
 		&:active {
-			background: url('../img/icons/sprite-icon-prev-big-tab.png') -10px -152px;
+			background-position: -10px -152px;
 		}
 	}
 
@@ -114,10 +114,10 @@ body.lock {
 		height: 51px;
 		background: url('../img/icons/sprite-icon-next-big-tab.png') -10px -10px;
 		&:hover {
-			background: url('../img/icons/sprite-icon-next-big-tab.png') -10px -81px;
+			background-position: -10px -81px;
 		}
 		&:active {
-			background: url('../img/icons/sprite-icon-next-big-tab.png') -10px -152px;
+			background-position: -10px -152px;
 		}
 	}
 }
@@ -128,10 +128,10 @@ body.lock {
 		height: 37px;
 		background: url('../img/icons/sprite-icon-prev-big-mobile.png') -10px -10px;
 		&:hover {
-			background: url('../img/icons/sprite-icon-prev-big-mobile.png') -10px -67px;
+			background-position:  -10px -67px;
 		}
 		&:active {
-			background: url('../img/icons/sprite-icon-prev-big-mobile.png') -10px -124px;
+			background-position:  -10px -124px;
 		}
 	}
 
@@ -140,10 +140,10 @@ body.lock {
 		height: 37px;
 		background: url('../img/icons/sprite-icon-next-big-mobile.png') -10px -10px;
 		&:hover {
-			background: url('../img/icons/sprite-icon-next-big-mobile.png') -10px -67px;
+			background-position: -10px -67px;
 		}
 		&:active {
-			background: url('../img/icons/sprite-icon-next-big-mobile.png') -10px -124px;
+			background-position: -10px -124px;
 		}
 	}
 }
